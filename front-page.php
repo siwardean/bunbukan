@@ -341,7 +341,7 @@ if (!function_exists('bunbukan_render_divider')) {
 	</section>
 
 	<!-- Contact Section -->
-	<section id="contact" class="bb-section bb-about">
+	<section id="contact" class="bb-section">
 		<?php bunbukan_render_divider('top'); ?>
 		<div class="bb-section__container">
 			<div class="bb-section__header">
@@ -406,7 +406,7 @@ if (!function_exists('bunbukan_render_divider')) {
 
 
 	<!-- Affiliations Section -->
-	<section id="affiliations" class="bb-section" style="position: relative; z-index: 5;">
+	<section id="affiliations" class="bb-section bb-about" style="position: relative; z-index: 5;">
 		<?php bunbukan_render_divider('top'); ?>
 		<div class="bb-section__container">
 			<div class="bb-section__header">
@@ -463,34 +463,34 @@ if (!function_exists('bunbukan_render_divider')) {
 				<div class="bb-affiliations__viewport" data-bb-affiliations-viewport>
 					<div class="bb-affiliations__track">
 						<?php foreach ($affiliations as $aff): ?>
-							<?php
-							$logo_theme = '/assets/images/affiliations/' . $aff['logo'];
-							$logo_react = '/bunbukan-eu/public/affiliations/' . $aff['logo'];
-							$logo_url = function_exists('bunbukan_asset_url') ? bunbukan_asset_url($logo_theme, $logo_react) : '';
-							$logo_key = strtolower(pathinfo($aff['logo'], PATHINFO_FILENAME));
-							?>
-							<div class="bb-affiliation-slide">
-								<?php if (!empty($aff['url'])): ?>
-									<a href="<?php echo esc_url($aff['url']); ?>" target="_blank" rel="noopener noreferrer"
-										class="bb-affiliation-card">
-										<?php if ($logo_url): ?>
-											<img class="bb-affiliation-card__logo" data-logo="<?php echo esc_attr($logo_key); ?>"
-												src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($aff['name']); ?>"
-												loading="lazy" />
-										<?php endif; ?>
-										<p class="bb-affiliation-card__name"><?php echo esc_html($aff['name']); ?></p>
-									</a>
-								<?php else: ?>
-									<div class="bb-affiliation-card">
-										<?php if ($logo_url): ?>
-											<img class="bb-affiliation-card__logo" data-logo="<?php echo esc_attr($logo_key); ?>"
-												src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($aff['name']); ?>"
-												loading="lazy" />
-										<?php endif; ?>
-										<p class="bb-affiliation-card__name"><?php echo esc_html($aff['name']); ?></p>
-									</div>
-								<?php endif; ?>
-							</div>
+								<?php
+								$logo_theme = '/assets/images/affiliations/' . $aff['logo'];
+								$logo_react = '/bunbukan-eu/public/affiliations/' . $aff['logo'];
+								$logo_url = function_exists('bunbukan_asset_url') ? bunbukan_asset_url($logo_theme, $logo_react) : '';
+								$logo_key = strtolower(pathinfo($aff['logo'], PATHINFO_FILENAME));
+								?>
+								<div class="bb-affiliation-slide">
+									<?php if (!empty($aff['url'])): ?>
+											<a href="<?php echo esc_url($aff['url']); ?>" target="_blank" rel="noopener noreferrer"
+												class="bb-affiliation-card">
+												<?php if ($logo_url): ?>
+														<img class="bb-affiliation-card__logo" data-logo="<?php echo esc_attr($logo_key); ?>"
+															src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($aff['name']); ?>"
+															loading="lazy" />
+												<?php endif; ?>
+												<p class="bb-affiliation-card__name"><?php echo esc_html($aff['name']); ?></p>
+											</a>
+									<?php else: ?>
+											<div class="bb-affiliation-card">
+												<?php if ($logo_url): ?>
+														<img class="bb-affiliation-card__logo" data-logo="<?php echo esc_attr($logo_key); ?>"
+															src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($aff['name']); ?>"
+															loading="lazy" />
+												<?php endif; ?>
+												<p class="bb-affiliation-card__name"><?php echo esc_html($aff['name']); ?></p>
+											</div>
+									<?php endif; ?>
+								</div>
 						<?php endforeach; ?>
 					</div>
 				</div>
