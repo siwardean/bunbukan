@@ -176,12 +176,19 @@ if (!function_exists('bunbukan_render_divider')) {
 				<div class="bb-about__stats-panel bb-scroll-reveal bb-scroll-reveal--up" data-delay="200">
 					<div class="bb-about__stats">
 						<div class="bb-about__stat">
-							<div class="bb-about__stat-number">1977</div>
-							<p class="bb-about__stat-label"><?php echo esc_html__('Since', 'bunbukan'); ?></p>
+							<div class="bb-about__stat-number">
+								<span class="bb-about__stat-number-value" data-count-target="50">0</span>
+								<span class="bb-about__stat-number-suffix">+</span>
+							</div>
+							<p class="bb-about__stat-label"><?php echo esc_html__('Years Teaching', 'bunbukan'); ?></p>
 						</div>
 						<div class="bb-about__stat">
-							<div class="bb-about__stat-number">All</div>
-							<p class="bb-about__stat-label"><?php echo esc_html__('Levels', 'bunbukan'); ?></p>
+							<div class="bb-about__stat-number">
+								<span class="bb-about__stat-number-value" data-count-target="3">0</span>
+							</div>
+							<p class="bb-about__stat-label">
+								<?php echo esc_html__('Experienced Instructors', 'bunbukan'); ?>
+							</p>
 						</div>
 						<div class="bb-about__stat">
 							<div class="bb-about__stat-number bb-about__stat-number--percent">
