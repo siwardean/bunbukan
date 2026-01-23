@@ -97,6 +97,7 @@ body {
 
 .japanese-font {
 	font-family: var(--font-japanese);
+	font-weight: normal;
 }
 
 .gradient-text {
