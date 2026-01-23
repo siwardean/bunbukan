@@ -1807,3 +1807,91 @@ a:hover {
 		bottom: -40px;
 	}
 }
+/* ============================================
+   Contact Section
+   ============================================ */
+.bb-contact__wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.5rem;
+}
+
+.bb-dojo__schedule {
+	margin-top: 1.5rem;
+}
+
+.bb-dojo__schedule-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bb-dojo__schedule-row:last-child {
+	border-bottom: none;
+}
+
+.bb-dojo__schedule-day {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.bb-dojo__day {
+	font-family: var(--font-display);
+	font-size: 1.1rem;
+	color: var(--bb-white-pure);
+	letter-spacing: 0.05em;
+}
+
+.bb-dojo__time {
+	font-size: 0.9rem;
+	color: var(--bb-text-muted);
+}
+
+.bb-dojo__discipline {
+	font-size: 0.95rem;
+	color: var(--bb-red);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.bb-dojo__discipline--kobudo {
+	color: var(--bb-amber);
+}
+
+.bb-contact__note {
+	margin-top: 1.5rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	color: var(--bb-text-muted);
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+.bb-contact__actions {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+	.bb-contact__wrapper {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.bb-contact__actions {
+		flex-direction: column;
+	}
+	
+	.bb-dojo__schedule-row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
+	}
+}

@@ -445,7 +445,7 @@ if (!function_exists('bunbukan_render_divider')) {
 		<div class="bb-section__container">
 			<div class="bb-section__header">
 				<h2 class="bb-section__title gradient-text">
-					<?php echo esc_html__('Start Your Journey', 'bunbukan'); ?>
+					<?php echo esc_html__('Contact', 'bunbukan'); ?>
 				</h2>
 				<div class="bb-section__divider"></div>
 				<p class="bb-section__subtitle">
