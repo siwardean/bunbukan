@@ -506,6 +506,19 @@ a:hover {
 	background: rgba(0, 0, 0, 0.85);
 	border-top: 1px solid rgba(255, 255, 255, 0.10);
 	padding: 3rem 0 2rem;
+	position: relative;
+}
+
+.site-footer::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	height: 3px;
+	background: linear-gradient(90deg, transparent, var(--bb-red), transparent);
+	box-shadow: 0 0 20px rgba(196, 0, 0, 0.4);
 }
 
 .site-footer__container {
