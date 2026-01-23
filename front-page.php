@@ -340,6 +340,71 @@ if (!function_exists('bunbukan_render_divider')) {
 		</div>
 	</section>
 
+	<!-- Contact Section -->
+	<section id="contact" class="bb-section bb-about">
+		<?php bunbukan_render_divider('top'); ?>
+		<div class="bb-section__container">
+			<div class="bb-section__header">
+				<h2 class="bb-section__title gradient-text">
+					<?php echo esc_html__('Contact', 'bunbukan'); ?>
+				</h2>
+				<div class="bb-section__divider"></div>
+				<p class="bb-section__subtitle">
+					<?php echo esc_html__('New members are always welcome. Come observe a class or join us for a free trial session.', 'bunbukan'); ?>
+				</p>
+			</div>
+
+			<div class="bb-contact__wrapper">
+				<!-- Training Schedule -->
+				<div class="bb-about__card bb-contact__schedule bb-scroll-reveal">
+					<h3 class="bb-about__card-title"><?php echo esc_html__('Training Schedule', 'bunbukan'); ?></h3>
+					<div class="bb-dojo__schedule">
+						<div class="bb-dojo__schedule-row">
+							<div class="bb-dojo__schedule-day">
+								<span class="bb-dojo__day">Wednesday</span>
+								<span class="bb-dojo__time">18:30–20:00</span>
+							</div>
+							<span class="bb-dojo__discipline">Karate</span>
+						</div>
+						<div class="bb-dojo__schedule-row">
+							<div class="bb-dojo__schedule-day">
+								<span class="bb-dojo__day">Wednesday</span>
+								<span class="bb-dojo__time">20:00–21:30</span>
+							</div>
+							<span class="bb-dojo__discipline bb-dojo__discipline--kobudo">Ryūkyū Kobudō</span>
+						</div>
+						<div class="bb-dojo__schedule-row">
+							<div class="bb-dojo__schedule-day">
+								<span class="bb-dojo__day">Friday</span>
+								<span class="bb-dojo__time">19:00–20:30</span>
+							</div>
+							<span class="bb-dojo__discipline">Karate</span>
+						</div>
+					</div>
+					<p class="bb-contact__note">
+						<?php echo esc_html__('Open to students aged 14 and up. All levels welcome.', 'bunbukan'); ?>
+					</p>
+				</div>
+
+				<!-- Contact CTA -->
+				<div class="bb-about__card bb-contact__cta bb-scroll-reveal bb-scroll-reveal--right" data-delay="200">
+					<h3 class="bb-about__card-title"><?php echo esc_html__('Get in Touch', 'bunbukan'); ?></h3>
+					<p class="bb-about__card-text">
+						<?php echo esc_html__('Questions about training or want to arrange a visit? We would love to hear from you.', 'bunbukan'); ?>
+					</p>
+					<div class="bb-contact__actions">
+						<a href="mailto:info@bunbukan.eu"
+							class="bb-btn bb-btn--primary"><?php echo esc_html__('Send Email', 'bunbukan'); ?></a>
+						<a href="https://www.google.com/maps/search/?api=1&query=Rue+des+Chalets+30,+1030+Schaerbeek"
+							target="_blank" rel="noopener noreferrer"
+							class="bb-btn bb-btn--outline"><?php echo esc_html__('View Map', 'bunbukan'); ?></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 	<!-- Affiliations Section -->
 	<section id="affiliations" class="bb-section" style="position: relative; z-index: 5;">
 		<?php bunbukan_render_divider('top'); ?>
@@ -437,70 +502,6 @@ if (!function_exists('bunbukan_render_divider')) {
 			</div>
 		</div>
 		<?php bunbukan_render_divider('bottom'); ?>
-	</section>
-
-	<!-- Contact Section -->
-	<section id="contact" class="bb-section bb-about">
-		<?php bunbukan_render_divider('top'); ?>
-		<div class="bb-section__container">
-			<div class="bb-section__header">
-				<h2 class="bb-section__title gradient-text">
-					<?php echo esc_html__('Contact', 'bunbukan'); ?>
-				</h2>
-				<div class="bb-section__divider"></div>
-				<p class="bb-section__subtitle">
-					<?php echo esc_html__('New members are always welcome. Come observe a class or join us for a free trial session.', 'bunbukan'); ?>
-				</p>
-			</div>
-
-			<div class="bb-contact__wrapper">
-				<!-- Training Schedule -->
-				<div class="bb-about__card bb-contact__schedule bb-scroll-reveal">
-					<h3 class="bb-about__card-title"><?php echo esc_html__('Training Schedule', 'bunbukan'); ?></h3>
-					<div class="bb-dojo__schedule">
-						<div class="bb-dojo__schedule-row">
-							<div class="bb-dojo__schedule-day">
-								<span class="bb-dojo__day">Wednesday</span>
-								<span class="bb-dojo__time">18:30–20:00</span>
-							</div>
-							<span class="bb-dojo__discipline">Karate</span>
-						</div>
-						<div class="bb-dojo__schedule-row">
-							<div class="bb-dojo__schedule-day">
-								<span class="bb-dojo__day">Wednesday</span>
-								<span class="bb-dojo__time">20:00–21:30</span>
-							</div>
-							<span class="bb-dojo__discipline bb-dojo__discipline--kobudo">Ryūkyū Kobudō</span>
-						</div>
-						<div class="bb-dojo__schedule-row">
-							<div class="bb-dojo__schedule-day">
-								<span class="bb-dojo__day">Friday</span>
-								<span class="bb-dojo__time">19:00–20:30</span>
-							</div>
-							<span class="bb-dojo__discipline">Karate</span>
-						</div>
-					</div>
-					<p class="bb-contact__note">
-						<?php echo esc_html__('Open to students aged 14 and up. All levels welcome.', 'bunbukan'); ?>
-					</p>
-				</div>
-
-				<!-- Contact CTA -->
-				<div class="bb-about__card bb-contact__cta bb-scroll-reveal bb-scroll-reveal--right" data-delay="200">
-					<h3 class="bb-about__card-title"><?php echo esc_html__('Get in Touch', 'bunbukan'); ?></h3>
-					<p class="bb-about__card-text">
-						<?php echo esc_html__('Questions about training or want to arrange a visit? We would love to hear from you.', 'bunbukan'); ?>
-					</p>
-					<div class="bb-contact__actions">
-						<a href="mailto:info@bunbukan.eu"
-							class="bb-btn bb-btn--primary"><?php echo esc_html__('Send Email', 'bunbukan'); ?></a>
-						<a href="https://www.google.com/maps/search/?api=1&query=Rue+des+Chalets+30,+1030+Schaerbeek"
-							target="_blank" rel="noopener noreferrer"
-							class="bb-btn bb-btn--outline"><?php echo esc_html__('View Map', 'bunbukan'); ?></a>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 
 </main><!-- #main -->
