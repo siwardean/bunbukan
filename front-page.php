@@ -216,61 +216,62 @@ if (!function_exists('bunbukan_render_divider')) {
 	?>
 
 	<!-- Disciplines Section - Two Sides of a Coin -->
-	<section id="disciplines" class="bb-disciplines">
+	<section id="disciplines" class="bb-section">
 		<?php bunbukan_render_divider('top'); ?>
-		<div class="bb-disciplines__header">
-			<h2 class="bb-section__title gradient-text"><?php echo esc_html__('Karate & Kobudō', 'bunbukan'); ?></h2>
-			<div class="bb-section__divider"></div>
-		</div>
-		<?php
-		// Logos for background overlays (prefer preprocessed logo assets; no photo backgrounds)
-		$karate_logo =
-			bunbukan_attachment_url_by_slug('shito-ryu-logo')
-			?: bunbukan_find_image('shito-ryu-logo', array('/assets/images/logos/', '/assets/images/', '/bunbukan-eu/public/images/'))
-			?: bunbukan_find_image('shitoryu', array('/assets/images/logos/', '/assets/images/', '/bunbukan-eu/public/images/'));
-
-		$kobudo_logo =
-			bunbukan_attachment_url_by_slug('bunbukan-background-logo-copy')
-			?: bunbukan_find_image('bunbukan-background-logo-copy', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'))
-			?: bunbukan_find_image('bunbukan-bg-logo', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'))
-			?: bunbukan_find_image('bunbukan-logo', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'));
-		?>
-
-		<!-- Karate Side (Grey) -->
-		<div class="bb-disciplines__side bb-disciplines__side--karate" <?php echo $karate_logo ? 'style="--bb-disciplines-logo: url(\'' . esc_url($karate_logo) . '\');"' : ''; ?>>
-			<div class="bb-disciplines__content bb-scroll-reveal bb-scroll-reveal--left">
-				<h3 class="bb-disciplines__title-jp japanese-font">糸東流空手道</h3>
-				<h4 class="bb-disciplines__title">Shitō-Ryū Karate</h4>
-				<p class="bb-disciplines__since">Since 1979</p>
-				<ul class="bb-disciplines__features">
-					<li><strong>Kihon</strong> <span>Fundamentals</span></li>
-					<li><strong>Kata</strong> <span>Traditional forms</span></li>
-					<li><strong>Bunkai</strong> <span>Applications</span></li>
-					<li><strong>Kumite</strong> <span>Sparring</span></li>
-				</ul>
+		<div class="bb-section__container">
+			<div class="bb-section__header">
+				<h2 class="bb-section__title gradient-text"><?php echo esc_html__('Karate & Kobudō', 'bunbukan'); ?>
+				</h2>
+				<div class="bb-section__divider"></div>
 			</div>
-		</div>
 
-		<!-- Center Divider -->
-		<div class="bb-disciplines__divider">
-			<div class="bb-disciplines__divider-line"></div>
-			<span class="bb-disciplines__divider-text gradient-text">二つの道</span>
-			<div class="bb-disciplines__divider-line"></div>
-		</div>
+			<div class="bb-disciplines__grid">
+				<?php
+				// Logos for background overlays
+				$karate_logo =
+					bunbukan_attachment_url_by_slug('shito-ryu-logo')
+					?: bunbukan_find_image('shito-ryu-logo', array('/assets/images/logos/', '/assets/images/', '/bunbukan-eu/public/images/'))
+					?: bunbukan_find_image('shitoryu', array('/assets/images/logos/', '/assets/images/', '/bunbukan-eu/public/images/'));
 
-		<!-- Kobudo Side (Black) -->
-		<div class="bb-disciplines__side bb-disciplines__side--kobudo" <?php echo $kobudo_logo ? 'style="--bb-disciplines-logo: url(\'' . esc_url($kobudo_logo) . '\');"' : ''; ?>>
-			<div class="bb-disciplines__content bb-scroll-reveal bb-scroll-reveal--right">
-				<h3 class="bb-disciplines__title-jp japanese-font">琉球古武道</h3>
-				<h4 class="bb-disciplines__title">Ryūkyū Kobudō</h4>
-				<p class="bb-disciplines__since">Since 2001</p>
-				<ul class="bb-disciplines__features">
-					<li><strong>Bō</strong> <span>Six-foot staff</span></li>
-					<li><strong>Sai</strong> <span>Three-pronged weapon</span></li>
-					<li><strong>Tonfa</strong> <span>Side-handle baton</span></li>
-					<li><strong>Nunchaku</strong> <span>Flail weapon</span></li>
-					<li><em>+ more traditional weapons</em></li>
-				</ul>
+				$kobudo_logo =
+					bunbukan_attachment_url_by_slug('bunbukan-background-logo-copy')
+					?: bunbukan_find_image('bunbukan-background-logo-copy', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'))
+					?: bunbukan_find_image('bunbukan-bg-logo', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'))
+					?: bunbukan_find_image('bunbukan-logo', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'));
+				?>
+
+				<!-- Karate Side (Grey) -->
+				<div class="bb-about__card bb-discipline-card bb-scroll-reveal bb-scroll-reveal--left" <?php echo $karate_logo ? 'style="--bb-disciplines-logo: url(\'' . esc_url($karate_logo) . '\');"' : ''; ?>>
+					<div class="bb-discipline-card__bg-logo"></div>
+					<div class="bb-discipline-card__content">
+						<h3 class="bb-disciplines__title-jp japanese-font">糸東流空手道</h3>
+						<h4 class="bb-disciplines__title">Shitō-Ryū Karate</h4>
+						<p class="bb-disciplines__since">Since 1979</p>
+						<ul class="bb-disciplines__features">
+							<li><strong>Kihon</strong> <span>Fundamentals</span></li>
+							<li><strong>Kata</strong> <span>Traditional forms</span></li>
+							<li><strong>Bunkai</strong> <span>Applications</span></li>
+							<li><strong>Kumite</strong> <span>Sparring</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Kobudo Side (Black) -->
+				<div class="bb-about__card bb-discipline-card bb-discipline-card--kobudo bb-scroll-reveal bb-scroll-reveal--right"
+					<?php echo $kobudo_logo ? 'style="--bb-disciplines-logo: url(\'' . esc_url($kobudo_logo) . '\');"' : ''; ?>>
+					<div class="bb-discipline-card__bg-logo"></div>
+					<div class="bb-discipline-card__content">
+						<h3 class="bb-disciplines__title-jp japanese-font">琉球古武道</h3>
+						<h4 class="bb-disciplines__title">Ryūkyū Kobudō</h4>
+						<p class="bb-disciplines__since">Since 2001</p>
+						<ul class="bb-disciplines__features">
+							<li><strong>Kihon</strong> <span>Fundamentals</span></li>
+							<li><strong>Kata</strong> <span>Traditional forms</span></li>
+							<li><strong>Bunkai</strong> <span>Applications</span></li>
+							<li><strong>Weapons</strong> <span>Bō, Sai, Tonfa, Nunchaku...</span></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
