@@ -248,6 +248,24 @@ function bunbukan_scripts() {
 add_action( 'wp_enqueue_scripts', 'bunbukan_scripts' );
 
 /**
+ * Remove Dojo item from primary navigation.
+ */
+function bunbukan_remove_dojo_from_primary_menu( $items, $args ) {
+	if ( empty( $args->theme_location ) || 'menu-1' !== $args->theme_location ) {
+		return $items;
+	}
+
+	$items = preg_replace(
+		'/<li[^>]*>\s*<a[^>]*href="[^"]*#dojo"[^>]*>.*?<\/a>\s*<\/li>/i',
+		'',
+		(string) $items
+	);
+
+	return $items;
+}
+add_filter( 'wp_nav_menu_items', 'bunbukan_remove_dojo_from_primary_menu', 20, 2 );
+
+/**
  * Fallback menu for primary navigation.
  */
 function bunbukan_fallback_menu() {

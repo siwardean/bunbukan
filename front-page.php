@@ -262,6 +262,13 @@ if (file_exists($hero_bg_path)) {
 				</ul>
 			</div>
 		</div>
+		<div class="bb-separator bb-separator--bottom">
+			<svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path
+					d="M0,0V46.29c47,0,51,32,106,32,66,0,36-40,111-40s48,46,126,46c75,0,84-31,146-31s63,38,136,38c64,0,76-26,134-26s54,34,118,34c56,0,70-42,130-42,56,0,39,36,93,36,58,0,75-40,100-48V0Z"
+					fill="#0b0b0b"></path>
+			</svg>
+		</div>
 	</section>
 
 	<!-- Instructors Section -->
@@ -280,19 +287,22 @@ if (file_exists($hero_bg_path)) {
 						'name' => 'Arnaud Vankeijenbergh',
 						'title' => '2nd Dan Shitō-Ryū, Technical Instructor (Karate)',
 						'description' => 'Assists in Karate instruction. Focused on precise technique and kata understanding.',
-						'image' => 'https://storage.googleapis.com/hostinger-horizons-assets-prod/966b4c59-c15a-47c6-afc6-705829a063e6/4b7ff68d3682b0c06922883f47748437.png',
+						'image' => bunbukan_find_image( 'arnaud-enhanced', array( '/assets/images/', '/bunbukan-eu/public/images/' ) ),
+						'style' => '--bb-instructor-scale: 1; --bb-instructor-translate: -4px; --bb-instructor-position: 50% 12%;',
 					),
 					array(
 						'name' => 'Alain Berckmans',
 						'title' => '6th Dan Shitō-Ryū (Shihan), Chief Instructor',
 						'description' => 'Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro.',
-						'image' => 'https://storage.googleapis.com/hostinger-horizons-assets-prod/966b4c59-c15a-47c6-afc6-705829a063e6/398724fb7355e6d6880340e99d1d6017.png',
+						'image' => bunbukan_find_image('SAI-FINAL', array('/assets/images/', '/bunbukan-eu/public/images/')),
+						'style' => '',
 					),
 					array(
 						'name' => 'Quentin Moreau',
 						'title' => '2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor',
 						'description' => 'Assists in both Karate and Kobudō. Special focus on Okinawan weapons training.',
-						'image' => 'https://storage.googleapis.com/hostinger-horizons-assets-prod/966b4c59-c15a-47c6-afc6-705829a063e6/1feb006e34685643d6495adfe900d5dc.png',
+						'image' => bunbukan_find_image( 'quentin-enhanced', array( '/assets/images/', '/bunbukan-eu/public/images/' ) ),
+						'style' => '--bb-instructor-scale: 1; --bb-instructor-translate: -4px; --bb-instructor-position: 50% 12%;',
 					),
 				);
 
@@ -304,7 +314,7 @@ if (file_exists($hero_bg_path)) {
 						<div class="bb-instructor-card__image-wrapper">
 							<img src="<?php echo esc_url($instructor['image']); ?>"
 								alt="<?php echo esc_attr($instructor['name']); ?>" class="bb-instructor-card__image"
-								loading="lazy" />
+								style="<?php echo esc_attr($instructor['style']); ?>" loading="lazy" />
 						</div>
 						<div class="bb-instructor-card__content">
 							<h3 class="bb-instructor-card__name"><?php echo esc_html($instructor['name']); ?></h3>
@@ -481,4 +491,7 @@ if (file_exists($hero_bg_path)) {
 
 <?php
 get_footer();
+
+
+
 
