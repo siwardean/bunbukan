@@ -14,6 +14,15 @@ $hero_bg_url = '';
 if (file_exists($hero_bg_path)) {
 	$hero_bg_url = get_template_directory_uri() . '/assets/images/shuri-castle.gif';
 }
+
+// Helper for SVG dividers
+if (!function_exists('bunbukan_render_divider')) {
+	function bunbukan_render_divider($position = 'top')
+	{
+		$class = 'bb-brush-divider bb-brush-divider--' . $position;
+		echo '<div class="' . esc_attr($class) . '"></div>';
+	}
+}
 ?>
 
 <main id="primary" class="site-main">
@@ -86,6 +95,7 @@ if (file_exists($hero_bg_path)) {
 
 	<!-- About Section - Option 3: Layered Panels -->
 	<section id="about" class="bb-section bb-about">
+		<?php bunbukan_render_divider('top'); ?>
 		<div class="bb-section__container">
 			<div class="bb-section__header">
 				<h2 class="bb-section__title gradient-text">
@@ -184,6 +194,7 @@ if (file_exists($hero_bg_path)) {
 				</div>
 			</div>
 		</div>
+		<?php bunbukan_render_divider('bottom', '#000000'); ?>
 	</section>
 
 	<?php
@@ -262,17 +273,11 @@ if (file_exists($hero_bg_path)) {
 				</ul>
 			</div>
 		</div>
-		<div class="bb-separator bb-separator--bottom">
-			<svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-				<path
-					d="M0,0V46.29c47,0,51,32,106,32,66,0,36-40,111-40s48,46,126,46c75,0,84-31,146-31s63,38,136,38c64,0,76-26,134-26s54,34,118,34c56,0,70-42,130-42,56,0,39,36,93,36,58,0,75-40,100-48V0Z"
-					fill="#0b0b0b"></path>
-			</svg>
-		</div>
 	</section>
 
 	<!-- Instructors Section -->
 	<section id="instructors" class="bb-section bb-about">
+		<?php bunbukan_render_divider('top'); ?>
 		<div class="bb-section__container">
 			<div class="bb-section__header">
 				<h2 class="bb-section__title gradient-text"><?php echo esc_html__('Our Instructors', 'bunbukan'); ?>
@@ -287,7 +292,7 @@ if (file_exists($hero_bg_path)) {
 						'name' => 'Arnaud Vankeijenbergh',
 						'title' => '2nd Dan Shitō-Ryū, Technical Instructor (Karate)',
 						'description' => 'Assists in Karate instruction. Focused on precise technique and kata understanding.',
-						'image' => bunbukan_find_image( 'arnaud-enhanced', array( '/assets/images/', '/bunbukan-eu/public/images/' ) ),
+						'image' => bunbukan_find_image('arnaud-enhanced', array('/assets/images/', '/bunbukan-eu/public/images/')),
 						'style' => '--bb-instructor-scale: 1; --bb-instructor-translate: -4px; --bb-instructor-position: 50% 12%;',
 					),
 					array(
@@ -301,7 +306,7 @@ if (file_exists($hero_bg_path)) {
 						'name' => 'Quentin Moreau',
 						'title' => '2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor',
 						'description' => 'Assists in both Karate and Kobudō. Special focus on Okinawan weapons training.',
-						'image' => bunbukan_find_image( 'quentin-enhanced', array( '/assets/images/', '/bunbukan-eu/public/images/' ) ),
+						'image' => bunbukan_find_image('quentin-enhanced', array('/assets/images/', '/bunbukan-eu/public/images/')),
 						'style' => '--bb-instructor-scale: 1; --bb-instructor-translate: -4px; --bb-instructor-position: 50% 12%;',
 					),
 				);
@@ -325,6 +330,7 @@ if (file_exists($hero_bg_path)) {
 				<?php endforeach; ?>
 			</div>
 		</div>
+		<?php bunbukan_render_divider('bottom', '#000000'); ?>
 	</section>
 
 	<!-- Affiliations Section -->
@@ -422,6 +428,7 @@ if (file_exists($hero_bg_path)) {
 				</button>
 			</div>
 		</div>
+		<?php bunbukan_render_divider('bottom', '#0b0b0b'); ?>
 	</section>
 
 	<!-- Contact Section -->
