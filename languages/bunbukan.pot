@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bunbukan 1.0.0\n"
+"POT-Creation-Date: 2025-12-31 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"\n"
+
+#: header.php
+msgid "Language switcher"
+msgstr ""
+
+#: front-page.php
+msgid "Budo Club Berchem logo"
+msgstr ""
+
+#: front-page.php
+msgid "Begin Your Journey"
+msgstr ""
+
+#: front-page.php
+msgid "About Bunbukan Brussels"
+msgstr ""
+
+#: front-page.php
+msgid "Our Heritage"
+msgstr ""
+
+#: front-page.php
+msgid "Our Mission"
+msgstr ""
+
+#: front-page.php
+msgid "Karate & Kobudō"
+msgstr ""
+
+#: front-page.php
+msgid "The Dōjō"
+msgstr ""
+
+#: front-page.php
+msgid "Interested in Training?"
+msgstr ""
+
+#: front-page.php
+msgid "Join a Class"
+msgstr ""
+
+#: front-page.php
+msgid "Contact Us"
+msgstr ""
+
+#: front-page.php
+msgid "Our Instructors"
+msgstr ""
+
+#: front-page.php
+msgid "Affiliations"
+msgstr ""
+
+#: front-page.php
+msgid "Send Email"
+msgstr ""
+

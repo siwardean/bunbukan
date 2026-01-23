@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bunbukan 1.0.0\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"\n"
+
+msgid "Language switcher"
+msgstr "Taalkeuze"
+
+msgid "Budo Club Berchem logo"
+msgstr "Budo Club Berchem-logo"
+
+msgid "Begin Your Journey"
+msgstr "Start je reis"
+
+msgid "About Bunbukan Brussels"
+msgstr "Over Bunbukan Brussels"
+
+msgid "Our Heritage"
+msgstr "Ons erfgoed"
+
+msgid "Our Mission"
+msgstr "Onze missie"
+
+msgid "Karate & Kobudō"
+msgstr "Karate & Kobudō"
+
+msgid "The Dōjō"
+msgstr "De Dōjō"
+
+msgid "Interested in Training?"
+msgstr "Wil je trainen?"
+
+msgid "Join a Class"
+msgstr "Doe mee met een les"
+
+msgid "Contact Us"
+msgstr "Contact"
+
+msgid "Our Instructors"
+msgstr "Onze instructeurs"
+
+msgid "Affiliations"
+msgstr "Aangesloten organisaties"
+
+msgid "Send Email"
+msgstr "E-mail sturen"
+
+msgid "Traditional Okinawan Martial Arts in Brussels"
+msgstr "Traditionele Okinawaanse vechtsporten in Brussel"
+
