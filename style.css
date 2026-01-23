@@ -784,6 +784,26 @@ a:hover {
 .bb-section {
 	padding: 5rem 2rem;
 	background: var(--bb-black);
+	position: relative;
+}
+
+.bb-section:not(:last-of-type)::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -42px;
+	height: 90px;
+	background:
+		linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 70%),
+		radial-gradient(120px 40px at 15% 40%, rgba(0, 0, 0, 0.85) 60%, transparent 70%),
+		radial-gradient(140px 50px at 45% 55%, rgba(0, 0, 0, 0.9) 60%, transparent 72%),
+		radial-gradient(120px 45px at 75% 50%, rgba(0, 0, 0, 0.85) 60%, transparent 70%),
+		radial-gradient(180px 60px at 95% 35%, rgba(0, 0, 0, 0.8) 60%, transparent 70%);
+	filter: blur(1px);
+	pointer-events: none;
+	z-index: 2;
+	mix-blend-mode: multiply;
 }
 
 .bb-section__container {
@@ -951,6 +971,12 @@ a:hover {
 	color: #000;
 	text-shadow: none;
 	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
+}
+
+.bb-about__kanji--multi {
+	font-size: 1.4rem;
+	letter-spacing: -0.05em;
+	margin-top: 2px;
 }
 
 .bb-about__statement--alt .bb-about__statement-kanji {

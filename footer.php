@@ -30,7 +30,6 @@
 						echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#home">Home</a></li>';
 						echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#about">About</a></li>';
 						echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#disciplines">Disciplines</a></li>';
-						echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#dojo">Dojo</a></li>';
 						echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#instructors">Instructors</a></li>';
 						echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#contact">Contact</a></li>';
 						echo '</ul>';

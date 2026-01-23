@@ -255,7 +255,6 @@ function bunbukan_fallback_menu() {
 	echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#home">' . esc_html__( 'Home', 'bunbukan' ) . '</a></li>';
 	echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#about">' . esc_html__( 'About', 'bunbukan' ) . '</a></li>';
 	echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#disciplines">' . esc_html__( 'Disciplines', 'bunbukan' ) . '</a></li>';
-	echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#dojo">' . esc_html__( 'Dojo', 'bunbukan' ) . '</a></li>';
 	echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#instructors">' . esc_html__( 'Instructors', 'bunbukan' ) . '</a></li>';
 	echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#affiliations">' . esc_html__( 'Affiliations', 'bunbukan' ) . '</a></li>';
 	echo '<li><a href="' . esc_url( home_url( '/' ) ) . '#contact">' . esc_html__( 'Contact', 'bunbukan' ) . '</a></li>';
