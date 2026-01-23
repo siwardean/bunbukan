@@ -89,7 +89,8 @@ if (file_exists($hero_bg_path)) {
 		<div class="bb-section__container">
 			<div class="bb-section__header">
 				<h2 class="bb-section__title gradient-text">
-					<?php echo esc_html__('About Bunbukan Brussels', 'bunbukan'); ?></h2>
+					<?php echo esc_html__('About Bunbukan Brussels', 'bunbukan'); ?>
+				</h2>
 				<div class="bb-section__divider"></div>
 			</div>
 
@@ -124,8 +125,7 @@ if (file_exists($hero_bg_path)) {
 
 					<div class="bb-about__image">
 						<?php if ($about_img): ?>
-							<img src="<?php echo esc_url($about_img); ?>" alt="Bunbukan Brussels heritage"
-								loading="lazy" />
+							<img src="<?php echo esc_url($about_img); ?>" alt="Bunbukan Brussels heritage" loading="lazy" />
 						<?php endif; ?>
 					</div>
 				</div>
@@ -277,16 +277,16 @@ if (file_exists($hero_bg_path)) {
 				<?php
 				$instructors = array(
 					array(
-						'name' => 'Alain Berckmans',
-						'title' => '6th Dan Shitō-Ryū (Shihan), Chief Instructor',
-						'description' => 'Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro.',
-						'image' => 'https://storage.googleapis.com/hostinger-horizons-assets-prod/966b4c59-c15a-47c6-afc6-705829a063e6/398724fb7355e6d6880340e99d1d6017.png',
-					),
-					array(
 						'name' => 'Arnaud Vankeijenbergh',
 						'title' => '2nd Dan Shitō-Ryū, Technical Instructor (Karate)',
 						'description' => 'Assists in Karate instruction. Focused on precise technique and kata understanding.',
 						'image' => 'https://storage.googleapis.com/hostinger-horizons-assets-prod/966b4c59-c15a-47c6-afc6-705829a063e6/4b7ff68d3682b0c06922883f47748437.png',
+					),
+					array(
+						'name' => 'Alain Berckmans',
+						'title' => '6th Dan Shitō-Ryū (Shihan), Chief Instructor',
+						'description' => 'Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro.',
+						'image' => 'https://storage.googleapis.com/hostinger-horizons-assets-prod/966b4c59-c15a-47c6-afc6-705829a063e6/398724fb7355e6d6880340e99d1d6017.png',
 					),
 					array(
 						'name' => 'Quentin Moreau',
@@ -386,8 +386,8 @@ if (file_exists($hero_bg_path)) {
 										class="bb-affiliation-card">
 										<?php if ($logo_url): ?>
 											<img class="bb-affiliation-card__logo" data-logo="<?php echo esc_attr($logo_key); ?>"
-												src="<?php echo esc_url($logo_url); ?>"
-												alt="<?php echo esc_attr($aff['name']); ?>" loading="lazy" />
+												src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($aff['name']); ?>"
+												loading="lazy" />
 										<?php endif; ?>
 										<p class="bb-affiliation-card__name"><?php echo esc_html($aff['name']); ?></p>
 									</a>
@@ -395,8 +395,8 @@ if (file_exists($hero_bg_path)) {
 									<div class="bb-affiliation-card">
 										<?php if ($logo_url): ?>
 											<img class="bb-affiliation-card__logo" data-logo="<?php echo esc_attr($logo_key); ?>"
-												src="<?php echo esc_url($logo_url); ?>"
-												alt="<?php echo esc_attr($aff['name']); ?>" loading="lazy" />
+												src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($aff['name']); ?>"
+												loading="lazy" />
 										<?php endif; ?>
 										<p class="bb-affiliation-card__name"><?php echo esc_html($aff['name']); ?></p>
 									</div>
@@ -419,7 +419,8 @@ if (file_exists($hero_bg_path)) {
 		<div class="bb-section__container">
 			<div class="bb-section__header">
 				<h2 class="bb-section__title gradient-text">
-					<?php echo esc_html__('Start Your Journey', 'bunbukan'); ?></h2>
+					<?php echo esc_html__('Start Your Journey', 'bunbukan'); ?>
+				</h2>
 				<div class="bb-section__divider"></div>
 				<p class="bb-section__subtitle">
 					<?php echo esc_html__('New members are always welcome. Come observe a class or join us for a free trial session.', 'bunbukan'); ?>
