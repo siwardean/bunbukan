@@ -27,28 +27,28 @@
 					);
 				} else {
 					echo '<ul id="footer-menu" class="footer-menu-fallback">';
-					echo '<li><a href="' . esc_url(home_url('/')) . '#home">Home</a></li>';
-					echo '<li><a href="' . esc_url(home_url('/')) . '#about">About</a></li>';
-					echo '<li><a href="' . esc_url(home_url('/')) . '#disciplines">Disciplines</a></li>';
-					echo '<li><a href="' . esc_url(home_url('/')) . '#instructors">Instructors</a></li>';
-					echo '<li><a href="' . esc_url(home_url('/')) . '#contact">Contact</a></li>';
+					echo '<li><a href="' . esc_url(home_url('/')) . '#home">' . esc_html__('Home', 'bunbukan') . '</a></li>';
+					echo '<li><a href="' . esc_url(home_url('/')) . '#about">' . esc_html__('About', 'bunbukan') . '</a></li>';
+					echo '<li><a href="' . esc_url(home_url('/')) . '#disciplines">' . esc_html__('Disciplines', 'bunbukan') . '</a></li>';
+					echo '<li><a href="' . esc_url(home_url('/')) . '#instructors">' . esc_html__('Instructors', 'bunbukan') . '</a></li>';
+					echo '<li><a href="' . esc_url(home_url('/')) . '#contact">' . esc_html__('Contact', 'bunbukan') . '</a></li>';
 					echo '</ul>';
 				}
 				?>
 			</nav>
 
 			<div class="site-footer__contact">
-				<p><strong>Location</strong></p>
-				<p>Bunbukan Brussels</p>
-				<p>Part of Budo Club Berchem</p>
+				<p><strong><?php echo esc_html__('Location', 'bunbukan'); ?></strong></p>
+				<p><?php echo esc_html__('Bunbukan Brussels', 'bunbukan'); ?></p>
+				<p><?php echo esc_html__('Part of Budo Club Berchem', 'bunbukan'); ?></p>
 				<p>Rue des Chalets 30</p>
 				<p>1030 Schaerbeek, Belgium</p>
 			</div>
 		</div>
 
 		<div class="site-footer__bottom">
-			<p>&copy; <?php echo date('Y'); ?> <?php echo esc_html__('Bunbukan Brussels', 'bunbukan'); ?>. All rights
-				reserved.</p>
+			<p>&copy; <?php echo date('Y'); ?> <?php echo esc_html__('Bunbukan Brussels', 'bunbukan'); ?>.
+				<?php echo esc_html__('All rights reserved.', 'bunbukan'); ?></p>
 		</div>
 	</div>
 </footer><!-- #colophon -->

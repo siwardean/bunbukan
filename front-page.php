@@ -73,18 +73,22 @@ if (!function_exists('bunbukan_render_divider')) {
 			</h1>
 
 			<p class="bb-hero__subtitle">
-				Preserving the authentic traditions of Okinawan martial arts in Brussels
+				<?php echo esc_html__('Preserving the authentic traditions of Okinawan martial arts in Brussels', 'bunbukan'); ?>
 			</p>
 
 			<div class="bb-hero__disciplines">
 				<div class="bb-hero__discipline">
-					<p class="bb-hero__discipline-title">Shitō-Ryū Karate</p>
-					<p class="bb-hero__discipline-subtitle">Direct lineage from Kenei Mabuni</p>
+					<p class="bb-hero__discipline-title"><?php echo esc_html__('Shitō-Ryū Karate', 'bunbukan'); ?></p>
+					<p class="bb-hero__discipline-subtitle">
+						<?php echo esc_html__('Direct lineage from Kenei Mabuni', 'bunbukan'); ?>
+					</p>
 				</div>
 				<div class="bb-hero__divider"></div>
 				<div class="bb-hero__discipline">
-					<p class="bb-hero__discipline-title">Ryūkyū Kobudō</p>
-					<p class="bb-hero__discipline-subtitle">Under Nakamoto Masahiro</p>
+					<p class="bb-hero__discipline-title"><?php echo esc_html__('Ryūkyū Kobudō', 'bunbukan'); ?></p>
+					<p class="bb-hero__discipline-subtitle">
+						<?php echo esc_html__('Under Nakamoto Masahiro', 'bunbukan'); ?>
+					</p>
 				</div>
 			</div>
 
@@ -135,7 +139,8 @@ if (!function_exists('bunbukan_render_divider')) {
 
 					<div class="bb-about__image">
 						<?php if ($about_img): ?>
-							<img src="<?php echo esc_url($about_img); ?>" alt="Bunbukan Brussels heritage" loading="lazy" />
+							<img src="<?php echo esc_url($about_img); ?>"
+								alt="<?php echo esc_attr__('Bunbukan Brussels heritage', 'bunbukan'); ?>" loading="lazy" />
 						<?php endif; ?>
 					</div>
 				</div>
@@ -147,11 +152,12 @@ if (!function_exists('bunbukan_render_divider')) {
 							<span class="bb-about__kanji bb-about__kanji--multi">伝統</span>
 						</div>
 						<div class="bb-about__statement-content">
-							<span class="bb-about__statement-script">Heritage</span>
-							<h3 class="bb-about__statement-title">SINCE 1977</h3>
+							<span
+								class="bb-about__statement-script"><?php echo esc_html__('Heritage', 'bunbukan'); ?></span>
+							<h3 class="bb-about__statement-title"><?php echo esc_html__('SINCE 1977', 'bunbukan'); ?>
+							</h3>
 							<p class="bb-about__statement-text">
-								Part of Budo Club Berchem, we preserve and transmit traditional martial arts as
-								practiced at the Bunbukan Honbu Dōjō in Okinawa.
+								<?php echo esc_html__('Part of Budo Club Berchem, we preserve and transmit traditional martial arts as practiced at the Bunbukan Honbu Dōjō in Okinawa.', 'bunbukan'); ?>
 							</p>
 						</div>
 					</div>
@@ -159,11 +165,11 @@ if (!function_exists('bunbukan_render_divider')) {
 					<div class="bb-about__statement bb-about__statement--alt bb-scroll-reveal bb-scroll-reveal--right"
 						data-delay="300">
 						<div class="bb-about__statement-content">
-							<span class="bb-about__statement-script">Mission</span>
-							<h3 class="bb-about__statement-title">THE WAY</h3>
+							<span
+								class="bb-about__statement-script"><?php echo esc_html__('Mission', 'bunbukan'); ?></span>
+							<h3 class="bb-about__statement-title"><?php echo esc_html__('THE WAY', 'bunbukan'); ?></h3>
 							<p class="bb-about__statement-text">
-								Technical depth and character development. Respect for tradition while fostering
-								personal growth through the path of martial arts.
+								<?php echo esc_html__('Technical depth and character development. Respect for tradition while fostering personal growth through the path of martial arts.', 'bunbukan'); ?>
 							</p>
 						</div>
 						<div class="bb-about__statement-kanji">
@@ -252,13 +258,21 @@ if (!function_exists('bunbukan_render_divider')) {
 					<div class="bb-discipline-card__bg-logo"></div>
 					<div class="bb-discipline-card__content">
 						<h3 class="bb-disciplines__title-jp japanese-font">糸東流空手道</h3>
-						<h4 class="bb-disciplines__title">Shitō-Ryū Karate</h4>
-						<p class="bb-disciplines__since">Since 1979</p>
+						<h4 class="bb-disciplines__title"><?php echo esc_html__('Shitō-Ryū Karate', 'bunbukan'); ?></h4>
+						<p class="bb-disciplines__since"><?php echo esc_html__('Since 1979', 'bunbukan'); ?></p>
 						<ul class="bb-disciplines__features">
-							<li><strong>Kihon</strong> <span>Fundamentals</span></li>
-							<li><strong>Kata</strong> <span>Traditional forms</span></li>
-							<li><strong>Bunkai</strong> <span>Applications</span></li>
-							<li><strong>Kumite</strong> <span>Sparring</span></li>
+							<li><strong><?php echo esc_html__('Kihon', 'bunbukan'); ?></strong>
+								<span><?php echo esc_html__('Fundamentals', 'bunbukan'); ?></span>
+							</li>
+							<li><strong><?php echo esc_html__('Kata', 'bunbukan'); ?></strong>
+								<span><?php echo esc_html__('Traditional forms', 'bunbukan'); ?></span>
+							</li>
+							<li><strong><?php echo esc_html__('Bunkai', 'bunbukan'); ?></strong>
+								<span><?php echo esc_html__('Applications', 'bunbukan'); ?></span>
+							</li>
+							<li><strong><?php echo esc_html__('Kumite', 'bunbukan'); ?></strong>
+								<span><?php echo esc_html__('Sparring', 'bunbukan'); ?></span>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -269,13 +283,21 @@ if (!function_exists('bunbukan_render_divider')) {
 					<div class="bb-discipline-card__bg-logo"></div>
 					<div class="bb-discipline-card__content">
 						<h3 class="bb-disciplines__title-jp japanese-font">琉球古武道</h3>
-						<h4 class="bb-disciplines__title">Ryūkyū Kobudō</h4>
-						<p class="bb-disciplines__since">Since 2001</p>
+						<h4 class="bb-disciplines__title"><?php echo esc_html__('Ryūkyū Kobudō', 'bunbukan'); ?></h4>
+						<p class="bb-disciplines__since"><?php echo esc_html__('Since 2001', 'bunbukan'); ?></p>
 						<ul class="bb-disciplines__features">
-							<li><strong>Kihon</strong> <span>Fundamentals</span></li>
-							<li><strong>Kata</strong> <span>Traditional forms</span></li>
-							<li><strong>Bunkai</strong> <span>Applications</span></li>
-							<li><strong>Weapons</strong> <span>Bō, Sai, Tonfa, Nunchaku...</span></li>
+							<li><strong><?php echo esc_html__('Kihon', 'bunbukan'); ?></strong>
+								<span><?php echo esc_html__('Fundamentals', 'bunbukan'); ?></span>
+							</li>
+							<li><strong><?php echo esc_html__('Kata', 'bunbukan'); ?></strong>
+								<span><?php echo esc_html__('Traditional forms', 'bunbukan'); ?></span>
+							</li>
+							<li><strong><?php echo esc_html__('Bunkai', 'bunbukan'); ?></strong>
+								<span><?php echo esc_html__('Applications', 'bunbukan'); ?></span>
+							</li>
+							<li><strong><?php echo esc_html__('Weapons', 'bunbukan'); ?></strong>
+								<span><?php echo esc_html__('Bō, Sai, Tonfa, Nunchaku...', 'bunbukan'); ?></span>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -298,22 +320,22 @@ if (!function_exists('bunbukan_render_divider')) {
 				$instructors = array(
 					array(
 						'name' => 'Arnaud Vankeijenbergh',
-						'title' => '2nd Dan Shitō-Ryū, Technical Instructor (Karate)',
-						'description' => 'Assists in Karate instruction. Focused on precise technique and kata understanding.',
+						'title' => esc_html__('2nd Dan Shitō-Ryū, Technical Instructor (Karate)', 'bunbukan'),
+						'description' => esc_html__('Assists in Karate instruction. Focused on precise technique and kata understanding.', 'bunbukan'),
 						'image' => bunbukan_find_image('arnaud-enhanced', array('/assets/images/', '/bunbukan-eu/public/images/')),
 						'style' => '--bb-instructor-scale: 1; --bb-instructor-translate: -4px; --bb-instructor-position: 50% 12%;',
 					),
 					array(
 						'name' => 'Alain Berckmans',
-						'title' => '6th Dan Shitō-Ryū (Shihan), Chief Instructor',
-						'description' => 'Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro.',
+						'title' => esc_html__('6th Dan Shitō-Ryū (Shihan), Chief Instructor', 'bunbukan'),
+						'description' => esc_html__('Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro.', 'bunbukan'),
 						'image' => bunbukan_find_image('SAI-FINAL', array('/assets/images/', '/bunbukan-eu/public/images/')),
 						'style' => '',
 					),
 					array(
 						'name' => 'Quentin Moreau',
-						'title' => '2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor',
-						'description' => 'Assists in both Karate and Kobudō. Special focus on Okinawan weapons training.',
+						'title' => esc_html__('2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor', 'bunbukan'),
+						'description' => esc_html__('Assists in both Karate and Kobudō. Special focus on Okinawan weapons training.', 'bunbukan'),
 						'image' => bunbukan_find_image('quentin-enhanced', array('/assets/images/', '/bunbukan-eu/public/images/')),
 						'style' => '--bb-instructor-scale: 1; --bb-instructor-translate: -4px; --bb-instructor-position: 50% 12%;',
 					),
@@ -361,24 +383,25 @@ if (!function_exists('bunbukan_render_divider')) {
 					<div class="bb-dojo__schedule">
 						<div class="bb-dojo__schedule-row">
 							<div class="bb-dojo__schedule-day">
-								<span class="bb-dojo__day">Wednesday</span>
+								<span class="bb-dojo__day"><?php echo esc_html__('Wednesday', 'bunbukan'); ?></span>
 								<span class="bb-dojo__time">18:30–20:00</span>
 							</div>
-							<span class="bb-dojo__discipline">Karate</span>
+							<span class="bb-dojo__discipline"><?php echo esc_html__('Karate', 'bunbukan'); ?></span>
 						</div>
 						<div class="bb-dojo__schedule-row">
 							<div class="bb-dojo__schedule-day">
-								<span class="bb-dojo__day">Wednesday</span>
+								<span class="bb-dojo__day"><?php echo esc_html__('Wednesday', 'bunbukan'); ?></span>
 								<span class="bb-dojo__time">20:00–21:30</span>
 							</div>
-							<span class="bb-dojo__discipline bb-dojo__discipline--kobudo">Ryūkyū Kobudō</span>
+							<span
+								class="bb-dojo__discipline bb-dojo__discipline--kobudo"><?php echo esc_html__('Ryūkyū Kobudō', 'bunbukan'); ?></span>
 						</div>
 						<div class="bb-dojo__schedule-row">
 							<div class="bb-dojo__schedule-day">
-								<span class="bb-dojo__day">Friday</span>
+								<span class="bb-dojo__day"><?php echo esc_html__('Friday', 'bunbukan'); ?></span>
 								<span class="bb-dojo__time">19:00–20:30</span>
 							</div>
-							<span class="bb-dojo__discipline">Karate</span>
+							<span class="bb-dojo__discipline"><?php echo esc_html__('Karate', 'bunbukan'); ?></span>
 						</div>
 					</div>
 					<p class="bb-contact__note">

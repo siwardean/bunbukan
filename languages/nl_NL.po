@@ -1,54 +1,181 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bunbukan 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-23 15:30+0100\n"
+"PO-Revision-Date: 2026-01-23 15:30+0100\n"
+"Last-Translator: Alain <alain@example.com>\n"
+"Language-Team: Dutch <nl@li.org>\n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-KeywordsList: __;esc_html__;esc_attr__;esc_html_e;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
 
-msgid "Language switcher"
-msgstr "Taalkeuze"
+msgid "Preserving the authentic traditions of Okinawan martial arts in Brussels"
+msgstr "Behoud van de authentieke tradities van Okinavaanse vechtsporten in Brussel"
 
-msgid "Budo Club Berchem logo"
-msgstr "Budo Club Berchem-logo"
+msgid "Shitō-Ryū Karate"
+msgstr "Shitō-Ryū Karate"
+
+msgid "Direct lineage from Kenei Mabuni"
+msgstr "Directe lijn van Kenei Mabuni"
+
+msgid "Ryūkyū Kobudō"
+msgstr "Ryūkyū Kobudō"
+
+msgid "Under Nakamoto Masahiro"
+msgstr "Onder Nakamoto Masahiro"
 
 msgid "Begin Your Journey"
-msgstr "Start je reis"
+msgstr "Begin uw reis"
 
 msgid "About Bunbukan Brussels"
 msgstr "Over Bunbukan Brussels"
 
-msgid "Our Heritage"
-msgstr "Ons erfgoed"
+msgid "Heritage"
+msgstr "Erfgoed"
 
-msgid "Our Mission"
-msgstr "Onze missie"
+msgid "Mission"
+msgstr "Missie"
+
+msgid "SINCE 1977"
+msgstr "SINDS 1977"
+
+msgid "THE WAY"
+msgstr "DE WEG"
+
+msgid "Part of Budo Club Berchem, we preserve and transmit traditional martial arts as practiced at the Bunbukan Honbu Dōjō in Okinawa."
+msgstr "Als onderdeel van Budo Club Berchem behouden en dragen wij traditionele vechtsporten over zoals beoefend in de Bunbukan Honbu Dōjō in Okinawa."
+
+msgid "Technical depth and character development. Respect for tradition while fostering personal growth through the path of martial arts."
+msgstr "Technische diepgang en karakterontwikkeling. Respect voor traditie terwijl persoonlijke groei wordt gestimuleerd door het pad van de vechtsporten."
+
+msgid "Years Teaching"
+msgstr "Jaren ervaring in lesgeven"
+
+msgid "Experienced Instructors"
+msgstr "Ervaren instructeurs"
+
+msgid "Authentic"
+msgstr "Authentiek"
 
 msgid "Karate & Kobudō"
 msgstr "Karate & Kobudō"
 
-msgid "The Dōjō"
-msgstr "De Dōjō"
+msgid "Since 1979"
+msgstr "Sinds 1979"
 
-msgid "Interested in Training?"
-msgstr "Wil je trainen?"
+msgid "Since 2001"
+msgstr "Sinds 2001"
 
-msgid "Join a Class"
-msgstr "Doe mee met een les"
+msgid "Kihon"
+msgstr "Kihon"
 
-msgid "Contact Us"
-msgstr "Contact"
+msgid "Fundamentals"
+msgstr "Basistechnieken"
+
+msgid "Kata"
+msgstr "Kata"
+
+msgid "Traditional forms"
+msgstr "Traditionele vormen"
+
+msgid "Bunkai"
+msgstr "Bunkai"
+
+msgid "Applications"
+msgstr "Toepassingen"
+
+msgid "Sparring"
+msgstr "Sparren"
+
+msgid "Weapons"
+msgstr "Wapens"
+
+msgid "Bō, Sai, Tonfa, Nunchaku..."
+msgstr "Bō, Sai, Tonfa, Nunchaku..."
 
 msgid "Our Instructors"
 msgstr "Onze instructeurs"
 
-msgid "Affiliations"
-msgstr "Aangesloten organisaties"
+msgid "2nd Dan Shitō-Ryū, Technical Instructor (Karate)"
+msgstr "2de Dan Shitō-Ryū, Technisch Instructeur (Karate)"
+
+msgid "Assists in Karate instruction. Focused on precise technique and kata understanding."
+msgstr "Assisteert bij Karate-instructie. Gericht op precieze techniek en kata-begrip."
+
+msgid "6th Dan Shitō-Ryū (Shihan), Chief Instructor"
+msgstr "6de Dan Shitō-Ryū (Shihan), Hoofdinstructeur"
+
+msgid "Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro."
+msgstr "Meer dan 50 jaar ervaring in de vechtsporten. Directe leerling van Kenei Mabuni en Nakamoto Masahiro."
+
+msgid "2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor"
+msgstr "2de Dan Shitō-Ryū, Zwarte Band in Kobudō, Technisch Instructeur"
+
+msgid "Assists in both Karate and Kobudō. Special focus on Okinawan weapons training."
+msgstr "Assisteert bij zowel Karate als Kobudō. Speciale focus op Okinavaanse wapentraining."
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "New members are always welcome. Come observe a class or join us for a free trial session."
+msgstr "Nieuwe leden zijn altijd welkom. Kom een les bijwonen of doe mee aan een gratis proefsessie."
+
+msgid "Training Schedule"
+msgstr "Trainingsschema"
+
+msgid "Wednesday"
+msgstr "Woensdag"
+
+msgid "Friday"
+msgstr "Vrijdag"
+
+msgid "Open to students aged 14 and up. All levels welcome."
+msgstr "Open voor studenten vanaf 14 jaar. Alle niveaus welkom."
+
+msgid "Get in Touch"
+msgstr "Contacteer ons"
+
+msgid "Questions about training or want to arrange a visit? We would love to hear from you."
+msgstr "Vragen over de training of wilt u een bezoek regelen? We horen graag van u."
 
 msgid "Send Email"
-msgstr "E-mail sturen"
+msgstr "Email verzenden"
+
+msgid "View Map"
+msgstr "Bekijk kaart"
+
+msgid "Affiliations"
+msgstr "Affiliaties"
+
+msgid "Bunbukan Brussels"
+msgstr "Bunbukan Brussels"
 
 msgid "Traditional Okinawan Martial Arts in Brussels"
-msgstr "Traditionele Okinawaanse vechtsporten in Brussel"
+msgstr "Traditionele Okinavaanse vechtsporten in Brussel"
 
+msgid "Location"
+msgstr "Locatie"
+
+msgid "Part of Budo Club Berchem"
+msgstr "Onderdeel van Budo Club Berchem"
+
+msgid "All rights reserved."
+msgstr "Alle rechten voorbehouden."
+
+msgid "Home"
+msgstr "Home"
+
+msgid "About"
+msgstr "Over"
+
+msgid "Disciplines"
+msgstr "Disciplines"
+
+msgid "Instructors"
+msgstr "Instructeurs"

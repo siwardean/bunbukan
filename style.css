@@ -364,6 +364,12 @@ a:hover {
 	background-attachment: fixed;
 }
 
+.bb-hero .bb-btn {
+	padding: 2.1rem 4.2rem;
+	font-size: 1.22rem;
+	margin-top: -0.6rem;
+}
+
 /* ============================================
    Affiliations (slider)
    ============================================ */
@@ -831,12 +837,13 @@ a:hover {
 }
 
 .bb-btn--primary {
-	color: #000000;
+	color: #ffffff;
 	text-shadow: none;
 }
 
 .bb-btn--primary:hover {
 	transform: translateY(-2px) scale(1.02);
+	color: #000000;
 }
 
 .bb-btn--primary:hover::before {
