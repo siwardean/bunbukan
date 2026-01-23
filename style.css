@@ -786,10 +786,10 @@ a:hover {
    ============================================ */
 .bb-btn {
 	display: inline-block;
-	padding: 0.95rem 2.2rem;
-	border-radius: 8px;
+	padding: 1.2rem 3rem;
+	border-radius: 0;
 	font-weight: 700;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	text-align: center;
 	text-decoration: none;
 	border: none;
@@ -798,30 +798,49 @@ a:hover {
 	font-family: var(--font-display);
 	text-transform: uppercase;
 	letter-spacing: 0.14em;
+	position: relative;
+	background: transparent;
+}
+
+.bb-btn::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: url('assets/images/brush-stroke.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: brightness(0) saturate(100%) invert(18%) sepia(98%) saturate(6943%) hue-rotate(357deg) brightness(91%) contrast(119%);
+	z-index: -1;
 }
 
 .bb-btn--primary {
-	background: var(--bb-red);
-	color: var(--bb-white-pure);
-	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55), 0 10px 24px rgba(196, 0, 0, 0.20);
+	color: #000000;
+	text-shadow: none;
 }
 
 .bb-btn--primary:hover {
-	background: var(--bb-red-dark);
-	transform: translateY(-2px);
-	box-shadow: 0 18px 36px rgba(0, 0, 0, 0.60), 0 14px 28px rgba(196, 0, 0, 0.25);
-	color: var(--bb-white-pure);
+	transform: translateY(-2px) scale(1.02);
+}
+
+.bb-btn--primary:hover::before {
+	filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(7426%) hue-rotate(1deg) brightness(88%) contrast(118%);
 }
 
 .bb-btn--outline {
-	background: transparent;
-	border: 1px solid rgba(255, 255, 255, 0.6);
 	color: var(--bb-white-pure);
 }
 
+.bb-btn--outline::before {
+	opacity: 0.8;
+}
+
 .bb-btn--outline:hover {
-	background: rgba(255, 255, 255, 0.12);
-	color: var(--bb-white-pure);
+	transform: translateY(-2px) scale(1.02);
+}
+
+.bb-btn--outline:hover::before {
+	opacity: 1;
 }
 
 /* ============================================
