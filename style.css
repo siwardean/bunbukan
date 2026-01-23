@@ -388,6 +388,21 @@ a:hover {
 	display: flex;
 	gap: 1rem;
 	padding: 0.25rem 0.25rem 1.25rem;
+	animation: scroll-affiliations 20s linear infinite;
+}
+
+.bb-affiliations__track:hover {
+	animation-play-state: paused;
+}
+
+@keyframes scroll-affiliations {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(calc(-220px * 3.5));
+	}
 }
 
 .bb-affiliation-slide {
