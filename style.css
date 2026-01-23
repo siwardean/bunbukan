@@ -553,7 +553,7 @@ a:hover {
 	font-family: var(--font-display);
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
-	color: var(--bb-text-strong);
+	color: var(--bb-red);
 	margin: 0 0 0.75rem;
 }
 
@@ -578,7 +578,7 @@ a:hover {
 }
 
 .footer-navigation a:hover {
-	color: var(--bb-white-pure);
+	color: var(--bb-red);
 }
 
 .site-footer__contact p {
@@ -587,7 +587,7 @@ a:hover {
 }
 
 .site-footer__contact strong {
-	color: var(--bb-text-strong);
+	color: var(--bb-red);
 }
 
 .site-footer__bottom {
@@ -1807,6 +1807,7 @@ a:hover {
 		bottom: -40px;
 	}
 }
+
 /* ============================================
    Contact Section
    ============================================ */
@@ -1888,7 +1889,7 @@ a:hover {
 	.bb-contact__actions {
 		flex-direction: column;
 	}
-	
+
 	.bb-dojo__schedule-row {
 		flex-direction: column;
 		align-items: flex-start;
