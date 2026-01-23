@@ -217,7 +217,7 @@ if (!function_exists('bunbukan_render_divider')) {
 
 	<!-- Disciplines Section - Two Sides of a Coin -->
 	<section id="disciplines" class="bb-disciplines">
-		<?php bunbukan_render_divider('top', '#1a1a1a'); ?>
+		<?php bunbukan_render_divider('top'); ?>
 		<div class="bb-disciplines__header">
 			<h2 class="bb-section__title gradient-text"><?php echo esc_html__('Karate & Kobudō', 'bunbukan'); ?></h2>
 			<div class="bb-section__divider"></div>
@@ -334,7 +334,7 @@ if (!function_exists('bunbukan_render_divider')) {
 
 	<!-- Affiliations Section -->
 	<section id="affiliations" class="bb-section" style="position: relative; z-index: 5;">
-		<?php bunbukan_render_divider('top', '#0b0b0b'); ?>
+		<?php bunbukan_render_divider('top'); ?>
 		<div class="bb-section__container">
 			<div class="bb-section__header">
 				<h2 class="bb-section__title gradient-text"><?php echo esc_html__('Affiliations', 'bunbukan'); ?></h2>
@@ -428,11 +428,12 @@ if (!function_exists('bunbukan_render_divider')) {
 				</button>
 			</div>
 		</div>
-		<?php bunbukan_render_divider('bottom', '#0b0b0b'); ?>
+		<?php bunbukan_render_divider('bottom'); ?>
 	</section>
 
 	<!-- Contact Section -->
 	<section id="contact" class="bb-section bb-about">
+		<?php bunbukan_render_divider('top'); ?>
 		<div class="bb-section__container">
 			<div class="bb-section__header">
 				<h2 class="bb-section__title gradient-text">
