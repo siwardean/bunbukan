@@ -455,14 +455,13 @@ if (!function_exists('bunbukan_render_divider')) {
 			?>
 
 			<div class="bb-affiliations" data-bb-affiliations>
-				<button class="bb-slider__nav bb-slider__nav--prev" type="button" aria-label="Previous affiliation"
-					data-bb-affiliations-prev>
-					<span aria-hidden="true">‹</span>
-				</button>
 
 				<div class="bb-affiliations__viewport" data-bb-affiliations-viewport>
 					<div class="bb-affiliations__track">
-						<?php foreach ($affiliations as $aff): ?>
+						<?php
+						// Double the array for seamless infinite scroll
+						$duplicated_affiliations = array_merge($affiliations, $affiliations);
+						foreach ($duplicated_affiliations as $aff): ?>
 							<?php
 							$logo_theme = '/assets/images/affiliations/' . $aff['logo'];
 							$logo_react = '/bunbukan-eu/public/affiliations/' . $aff['logo'];
@@ -495,10 +494,6 @@ if (!function_exists('bunbukan_render_divider')) {
 					</div>
 				</div>
 
-				<button class="bb-slider__nav bb-slider__nav--next" type="button" aria-label="Next affiliation"
-					data-bb-affiliations-next>
-					<span aria-hidden="true">›</span>
-				</button>
 			</div>
 		</div>
 		<?php bunbukan_render_divider('bottom'); ?>

@@ -2,16 +2,16 @@
  * Bunbukan Theme JavaScript
  */
 
-(function() {
+(function () {
 	'use strict';
 
 	// Mobile menu toggle
 	function initMobileMenu() {
 		const menuToggle = document.getElementById('nav-toggle');
 		const navigation = document.getElementById('site-navigation');
-		
+
 		if (menuToggle && navigation) {
-			menuToggle.addEventListener('click', function() {
+			menuToggle.addEventListener('click', function () {
 				const isExpanded = this.getAttribute('aria-expanded') === 'true';
 				this.setAttribute('aria-expanded', !isExpanded);
 				navigation.classList.toggle('menu-open');
@@ -86,97 +86,16 @@
 		update();
 	}
 
-	// Affiliations slider (continuous smooth scroll)
+	// Affiliations slider (Simplified: CSS handles animation, JS handles pausing if needed)
 	function initAffiliationsSlider() {
 		const root = document.querySelector('[data-bb-affiliations]');
 		if (!root) return;
 
-		const viewport = root.querySelector('[data-bb-affiliations-viewport]');
 		const track = root.querySelector('.bb-affiliations__track');
-		const prev = root.querySelector('[data-bb-affiliations-prev]');
-		const next = root.querySelector('[data-bb-affiliations-next]');
-		if (!viewport || !track) return;
+		if (!track) return;
 
-		const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-		// Continuous scroll variables
-		let isScrolling = true;
-		let scrollSpeed = reduceMotion ? 0.2 : 0.3; // pixels per frame (slower)
-		let animationFrame = null;
-
-		function getStep() {
-			const first = track.querySelector('.bb-affiliation-slide');
-			if (!first) return Math.max(200, viewport.clientWidth * 0.6);
-			const gap = parseFloat(window.getComputedStyle(track).gap || '0') || 0;
-			return first.getBoundingClientRect().width + gap;
-		}
-
-		function scrollByDir(dir) {
-			const step = getStep();
-			const maxScroll = viewport.scrollWidth - viewport.clientWidth;
-			let target = viewport.scrollLeft + (dir === 'prev' ? -step : step);
-			if (target < 0) target = maxScroll; // wrap
-			if (target > maxScroll - 2) target = 0; // wrap
-
-			viewport.scrollTo({ left: target, behavior: reduceMotion ? 'auto' : 'smooth' });
-		}
-
-		// Continuous smooth scrolling
-		function continuousScroll() {
-			if (!isScrolling) return;
-
-			const maxScroll = viewport.scrollWidth - viewport.clientWidth;
-			let newScrollLeft = viewport.scrollLeft + scrollSpeed;
-			if (newScrollLeft >= maxScroll) {
-				newScrollLeft = 0;
-			}
-
-			viewport.scrollLeft = newScrollLeft;
-			animationFrame = window.requestAnimationFrame(continuousScroll);
-		}
-
-		const stop = () => {
-			isScrolling = false;
-			if (animationFrame) {
-				window.cancelAnimationFrame(animationFrame);
-				animationFrame = null;
-			}
-		};
-
-		const start = () => {
-			if (!isScrolling) {
-				isScrolling = true;
-				continuousScroll();
-			}
-		};
-
-		// Button controls (temporarily stop auto-scroll)
-		if (prev) {
-			prev.addEventListener('click', () => {
-				stop();
-				scrollByDir('prev');
-				setTimeout(start, 3000); // Resume after 3 seconds
-			});
-		}
-		
-		if (next) {
-			next.addEventListener('click', () => {
-				stop();
-				scrollByDir('next');
-				setTimeout(start, 3000); // Resume after 3 seconds
-			});
-		}
-
-		// Pause on hover over any slide or the entire slider
-		root.addEventListener('mouseenter', stop);
-		root.addEventListener('mouseleave', start);
-		viewport.addEventListener('focusin', stop);
-		viewport.addEventListener('focusout', start);
-
-		// Start the continuous scroll
-		if (!reduceMotion) {
-			start();
-		}
+		// We use CSS for animation now. 
+		// JS can be used for extra features if needed.
 	}
 
 	// Scroll Reveal Animations
@@ -334,7 +253,7 @@
 
 	// Initialize on DOM ready
 	if (document.readyState === 'loading') {
-		document.addEventListener('DOMContentLoaded', function() {
+		document.addEventListener('DOMContentLoaded', function () {
 			initMobileMenu();
 			initSmoothScroll();
 			initHeroParallax();
