@@ -800,7 +800,8 @@ a:hover {
    Section Styles
    ============================================ */
 .bb-section {
-	padding: 4rem 1.5rem;
+	padding: 6rem 1.5rem 10rem;
+	/***** Modified ******/
 	background: var(--bb-black);
 	position: relative;
 	z-index: 0;
