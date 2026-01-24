@@ -1346,9 +1346,10 @@ a:hover {
 
 .bb-discipline-row {
 	display: grid;
-	grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-	gap: 2.5rem;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: 0;
 	align-items: stretch;
+	min-height: 520px;
 }
 
 .bb-discipline-row--karate .bb-discipline-card {
@@ -1356,12 +1357,13 @@ a:hover {
 }
 
 .bb-discipline-row--kobudo {
-	grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 }
 
 .bb-discipline-row__image {
 	position: relative;
 	min-height: 360px;
+	height: 100%;
 	overflow: hidden;
 	background: #000;
 	box-shadow: 0 24px 70px rgba(0, 0, 0, 0.65);
@@ -1553,6 +1555,17 @@ a:hover {
 	border: none;
 	box-shadow: none;
 	transition: none;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.bb-discipline-card__content {
+	flex: 1;
+}
+
+.bb-discipline-row--kobudo .bb-discipline-card__content {
+	padding-top: 1.5rem;
 }
 
 .bb-discipline-card:hover {

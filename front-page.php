@@ -265,8 +265,8 @@ if (!function_exists('bunbukan_render_divider')) {
 				?>
 
 				<!-- Karate Row -->
-				<div class="bb-discipline-row bb-discipline-row--karate bb-scroll-reveal bb-scroll-reveal--left">
-					<div class="bb-discipline-row__image bb-discipline-row__image--karate">
+				<div class="bb-discipline-row bb-discipline-row--karate">
+					<div class="bb-discipline-row__image bb-discipline-row__image--karate bb-scroll-reveal bb-scroll-reveal--left">
 						<?php if ($karate_image): ?>
 							<img src="<?php echo esc_url($karate_image); ?>"
 								alt="<?php echo esc_attr__('Karate training at makiwara', 'bunbukan'); ?>" loading="lazy" />
@@ -287,7 +287,7 @@ if (!function_exists('bunbukan_render_divider')) {
 				</div>
 
 				<!-- Kobudo Row (mirror) -->
-				<div class="bb-discipline-row bb-discipline-row--kobudo bb-scroll-reveal bb-scroll-reveal--right">
+				<div class="bb-discipline-row bb-discipline-row--kobudo">
 					<div class="bb-about__card bb-discipline-card bb-discipline-card--kobudo"
 						<?php echo $kobudo_logo ? 'style="--bb-disciplines-logo: url(\'' . esc_url($kobudo_logo) . '\');"' : ''; ?>>
 						<div class="bb-discipline-card__bg-logo"></div>
@@ -300,7 +300,7 @@ if (!function_exists('bunbukan_render_divider')) {
 						</p>
 						</div>
 					</div>
-					<div class="bb-discipline-row__image bb-discipline-row__image--kobudo">
+					<div class="bb-discipline-row__image bb-discipline-row__image--kobudo bb-scroll-reveal bb-scroll-reveal--right">
 						<?php if ($kobudo_image): ?>
 							<img src="<?php echo esc_url($kobudo_image); ?>"
 								alt="<?php echo esc_attr__('Kobudō training at makiwara', 'bunbukan'); ?>" loading="lazy" />
