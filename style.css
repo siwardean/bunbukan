@@ -1,4 +1,4 @@
-﻿/*
+/*
 Theme Name: Bunbukan Brussels
 Author: Budo Club Berchem
 Author URI: https://bunbukan.eu
@@ -39,7 +39,7 @@ Bunbukan Brussels is part of Budo Club Berchem, founded in 1977. Theme based on 
 	--bb-red-dark: #8e0000;
 	--bb-amber: #f59e0b;
 	--bb-amber-dark: #d97706;
-	--bb-black: #1a1a1a;
+	--bb-black: #2c2c2c;
 	--bb-surface: #121212;
 	--bb-surface-2: #181818;
 	--bb-border: rgba(255, 255, 255, 0.14);
@@ -1824,6 +1824,11 @@ a:hover {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 2.5rem;
+}
+
+.bb-contact__schedule,
+.bb-contact__cta {
+	background: var(--bb-surface-2);
 }
 
 .bb-dojo__schedule {
