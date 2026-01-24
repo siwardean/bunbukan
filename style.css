@@ -1735,7 +1735,7 @@ a:hover {
 }
 
 .bb-instructor-card__title {
-	font-size: 0.85rem;
+	font-size: 0.95rem;
 	color: var(--bb-red);
 	font-weight: 600;
 	font-family: var(--font-display);
@@ -1829,6 +1829,10 @@ a:hover {
 .bb-contact__schedule,
 .bb-contact__cta {
 	background: var(--bb-surface-2);
+	font-family: var(--font-body);
+	font-size: 1rem;
+	line-height: 1.8;
+	letter-spacing: normal;
 }
 
 .bb-dojo__schedule {
