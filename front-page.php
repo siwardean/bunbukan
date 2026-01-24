@@ -236,9 +236,12 @@ if (!function_exists('bunbukan_render_divider')) {
 				<h2 class="bb-section__title gradient-text"><?php echo esc_html__('Karate & Kobudō', 'bunbukan'); ?>
 				</h2>
 				<div class="bb-section__divider"></div>
+				<p class="bb-section__subtitle">
+					<?php echo esc_html__("Karate and kobudō are two sides of the same coin. To understand one, you must practice the other.", 'bunbukan'); ?>
+				</p>
 			</div>
 
-			<div class="bb-disciplines__grid">
+			<div class="bb-disciplines__stack">
 				<?php
 				// Logos for background overlays
 				$karate_logo =
@@ -251,54 +254,57 @@ if (!function_exists('bunbukan_render_divider')) {
 					?: bunbukan_find_image('bunbukan-background-logo-copy', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'))
 					?: bunbukan_find_image('bunbukan-bg-logo', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'))
 					?: bunbukan_find_image('bunbukan-logo', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'));
+
+				$karate_image =
+					bunbukan_attachment_url_by_slug('makiwara-tsuki')
+					?: bunbukan_find_image('makiwara-tsuki', array('/assets/images/', '/assets/images/disciplines/', '/bunbukan-eu/public/images/'));
+
+				$kobudo_image =
+					bunbukan_attachment_url_by_slug('makiwara-men-uchi')
+					?: bunbukan_find_image('makiwara-men-uchi', array('/assets/images/', '/assets/images/disciplines/', '/bunbukan-eu/public/images/'));
 				?>
 
-				<!-- Karate Side (Grey) -->
-				<div class="bb-about__card bb-discipline-card bb-scroll-reveal bb-scroll-reveal--left" <?php echo $karate_logo ? 'style="--bb-disciplines-logo: url(\'' . esc_url($karate_logo) . '\');"' : ''; ?>>
-					<div class="bb-discipline-card__bg-logo"></div>
-					<div class="bb-discipline-card__content">
-						<h3 class="bb-disciplines__title-jp japanese-font">糸東流空手道</h3>
-						<h4 class="bb-disciplines__title"><?php echo esc_html__('Shitō-Ryū Karate', 'bunbukan'); ?></h4>
-						<p class="bb-disciplines__since"><?php echo esc_html__('Since 1979', 'bunbukan'); ?></p>
-						<ul class="bb-disciplines__features">
-							<li><strong><?php echo esc_html__('Kihon', 'bunbukan'); ?></strong>
-								<span><?php echo esc_html__('Fundamentals', 'bunbukan'); ?></span>
-							</li>
-							<li><strong><?php echo esc_html__('Kata', 'bunbukan'); ?></strong>
-								<span><?php echo esc_html__('Traditional forms', 'bunbukan'); ?></span>
-							</li>
-							<li><strong><?php echo esc_html__('Bunkai', 'bunbukan'); ?></strong>
-								<span><?php echo esc_html__('Applications', 'bunbukan'); ?></span>
-							</li>
-							<li><strong><?php echo esc_html__('Kumite', 'bunbukan'); ?></strong>
-								<span><?php echo esc_html__('Sparring', 'bunbukan'); ?></span>
-							</li>
-						</ul>
+				<!-- Karate Row -->
+				<div class="bb-discipline-row bb-discipline-row--karate bb-scroll-reveal bb-scroll-reveal--left">
+					<div class="bb-discipline-row__image bb-discipline-row__image--karate">
+						<?php if ($karate_image): ?>
+							<img src="<?php echo esc_url($karate_image); ?>"
+								alt="<?php echo esc_attr__('Karate training at makiwara', 'bunbukan'); ?>" loading="lazy" />
+						<?php endif; ?>
+					</div>
+					<div class="bb-about__card bb-discipline-card"
+						<?php echo $karate_logo ? 'style="--bb-disciplines-logo: url(\'' . esc_url($karate_logo) . '\');"' : ''; ?>>
+						<div class="bb-discipline-card__bg-logo"></div>
+						<div class="bb-discipline-card__content">
+							<h3 class="bb-disciplines__title-jp japanese-font">糸東流空手道</h3>
+							<h4 class="bb-disciplines__title"><?php echo esc_html__('Shitō-Ryū Karate', 'bunbukan'); ?></h4>
+							<p class="bb-disciplines__since"><?php echo esc_html__('Since 1979', 'bunbukan'); ?></p>
+						<p class="bb-disciplines__description">
+							<?php echo esc_html__('Shitō-ryū is a traditional Okinawan karate style, known for the richness of its kata and the precision of its techniques. Rooted in both Shuri and Naha traditions, it offers a complete practice that combines technical rigor, fluid movement, and a deep understanding of martial principles.', 'bunbukan'); ?>
+						</p>
+						</div>
 					</div>
 				</div>
 
-				<!-- Kobudo Side (Black) -->
-				<div class="bb-about__card bb-discipline-card bb-discipline-card--kobudo bb-scroll-reveal bb-scroll-reveal--right"
-					<?php echo $kobudo_logo ? 'style="--bb-disciplines-logo: url(\'' . esc_url($kobudo_logo) . '\');"' : ''; ?>>
-					<div class="bb-discipline-card__bg-logo"></div>
-					<div class="bb-discipline-card__content">
-						<h3 class="bb-disciplines__title-jp japanese-font">琉球古武道</h3>
-						<h4 class="bb-disciplines__title"><?php echo esc_html__('Ryūkyū Kobudō', 'bunbukan'); ?></h4>
-						<p class="bb-disciplines__since"><?php echo esc_html__('Since 2001', 'bunbukan'); ?></p>
-						<ul class="bb-disciplines__features">
-							<li><strong><?php echo esc_html__('Kihon', 'bunbukan'); ?></strong>
-								<span><?php echo esc_html__('Fundamentals', 'bunbukan'); ?></span>
-							</li>
-							<li><strong><?php echo esc_html__('Kata', 'bunbukan'); ?></strong>
-								<span><?php echo esc_html__('Traditional forms', 'bunbukan'); ?></span>
-							</li>
-							<li><strong><?php echo esc_html__('Bunkai', 'bunbukan'); ?></strong>
-								<span><?php echo esc_html__('Applications', 'bunbukan'); ?></span>
-							</li>
-							<li><strong><?php echo esc_html__('Weapons', 'bunbukan'); ?></strong>
-								<span><?php echo esc_html__('Bō, Sai, Tonfa, Nunchaku...', 'bunbukan'); ?></span>
-							</li>
-						</ul>
+				<!-- Kobudo Row (mirror) -->
+				<div class="bb-discipline-row bb-discipline-row--kobudo bb-scroll-reveal bb-scroll-reveal--right">
+					<div class="bb-about__card bb-discipline-card bb-discipline-card--kobudo"
+						<?php echo $kobudo_logo ? 'style="--bb-disciplines-logo: url(\'' . esc_url($kobudo_logo) . '\');"' : ''; ?>>
+						<div class="bb-discipline-card__bg-logo"></div>
+						<div class="bb-discipline-card__content">
+							<h3 class="bb-disciplines__title-jp japanese-font">琉球古武道</h3>
+							<h4 class="bb-disciplines__title"><?php echo esc_html__('Ryūkyū Kobudō', 'bunbukan'); ?></h4>
+							<p class="bb-disciplines__since"><?php echo esc_html__('Since 2001', 'bunbukan'); ?></p>
+						<p class="bb-disciplines__description bb-disciplines__description--left">
+							<?php echo esc_html__('Ryūkyū Kobudō is the traditional weapon art of Okinawa, practiced alongside karate. At Bunbukan, this discipline develops coordination, control, and body awareness through the study of classical weapon forms and their applications, in an authentic and traditional approach.', 'bunbukan'); ?>
+						</p>
+						</div>
+					</div>
+					<div class="bb-discipline-row__image bb-discipline-row__image--kobudo">
+						<?php if ($kobudo_image): ?>
+							<img src="<?php echo esc_url($kobudo_image); ?>"
+								alt="<?php echo esc_attr__('Kobudō training at makiwara', 'bunbukan'); ?>" loading="lazy" />
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>
@@ -373,6 +379,8 @@ if (!function_exists('bunbukan_render_divider')) {
 				<div class="bb-section__divider"></div>
 				<p class="bb-section__subtitle">
 					<?php echo esc_html__('New members are always welcome. Come observe a class or join us for a free trial session.', 'bunbukan'); ?>
+					<br />
+					<?php echo esc_html__('You can choose to practice only one of the two disciplines.', 'bunbukan'); ?>
 				</p>
 			</div>
 
