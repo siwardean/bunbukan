@@ -157,7 +157,7 @@ if (!function_exists('bunbukan_render_divider')) {
 							<h3 class="bb-about__statement-title"><?php echo esc_html__('SINCE 1977', 'bunbukan'); ?>
 							</h3>
 							<p class="bb-about__statement-text">
-								<?php echo esc_html__('Part of Budo Club Berchem, we preserve and transmit traditional martial arts as practiced at the Bunbukan Honbu Dōjō in Okinawa.', 'bunbukan'); ?>
+								<?php echo esc_html__('As part of Budo Club Berchem, we preserve and transmit traditional martial arts taught at the Bunbukan Honbu Dōjō, while also continuing the Shitō-ryū karate lineage passed down by Kenei Mabuni.', 'bunbukan'); ?>
 							</p>
 						</div>
 					</div>
