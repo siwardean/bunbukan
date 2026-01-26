@@ -68,7 +68,7 @@ if (!function_exists('bunbukan_render_divider')) {
 			<?php endif; ?>
 
 			<h1 class="bb-hero__title japanese-font">
-				<span class="gradient-text">武館</span><br>
+				<span class="gradient-text">文武館</span><br>
 				<span>Bunbukan Brussels</span>
 			</h1>
 
@@ -349,8 +349,17 @@ if (!function_exists('bunbukan_render_divider')) {
 
 				foreach ($instructors as $index => $instructor):
 					$delay = $index * 200; // Stagger animation
+					// Add class based on instructor name for mobile ordering
+					$instructor_class = '';
+					if (strpos($instructor['name'], 'Alain') !== false) {
+						$instructor_class = 'bb-instructor-card--alain';
+					} elseif (strpos($instructor['name'], 'Arnaud') !== false) {
+						$instructor_class = 'bb-instructor-card--arnaud';
+					} elseif (strpos($instructor['name'], 'Quentin') !== false) {
+						$instructor_class = 'bb-instructor-card--quentin';
+					}
 					?>
-					<div class="bb-about__card bb-instructor-card bb-scroll-reveal"
+					<div class="bb-about__card bb-instructor-card <?php echo esc_attr($instructor_class); ?> bb-scroll-reveal"
 						style="transition-delay: <?php echo intval($delay); ?>ms">
 						<div class="bb-instructor-card__image-wrapper">
 							<img src="<?php echo esc_url($instructor['image']); ?>"

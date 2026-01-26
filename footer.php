@@ -7,6 +7,7 @@
 ?>
 
 <footer id="colophon" class="site-footer">
+	<div class="site-footer__separator"></div>
 	<div class="site-footer__container">
 		<div class="site-footer__content">
 			<div class="site-footer__brand">

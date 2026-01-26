@@ -531,6 +531,14 @@ a:hover {
 	position: relative;
 }
 
+.site-footer__separator {
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(90deg, transparent, var(--bb-red), transparent);
+	box-shadow: 0 0 20px rgba(196, 0, 0, 0.4);
+	margin-bottom: 2rem;
+}
+
 .site-footer::before {
 	content: '';
 	position: absolute;
@@ -541,6 +549,7 @@ a:hover {
 	height: 3px;
 	background: linear-gradient(90deg, transparent, var(--bb-red), transparent);
 	box-shadow: 0 0 20px rgba(196, 0, 0, 0.4);
+	display: none; /* Hidden in favor of .site-footer__separator */
 }
 
 .site-footer__container {
@@ -1859,8 +1868,22 @@ a:hover {
 
 @media (max-width: 768px) {
 	.bb-instructors__grid {
-		grid-template-columns: 1fr;
+		display: flex;
+		flex-direction: column;
 		gap: 2rem;
+	}
+
+	/* Reorder instructors for mobile: Alain first, then Arnaud, then Quentin */
+	.bb-instructor-card--alain {
+		order: 1;
+	}
+
+	.bb-instructor-card--arnaud {
+		order: 2;
+	}
+
+	.bb-instructor-card--quentin {
+		order: 3;
 	}
 
 	.bb-instructor-card__image-wrapper {

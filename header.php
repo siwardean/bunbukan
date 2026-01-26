@@ -13,9 +13,9 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php
-	// Favicon (prefer theme asset, fallback to React asset)
+	// Favicon using Bunbukan Brussels Icon
 	$favicon_url = function_exists( 'bunbukan_asset_url' )
-		? bunbukan_asset_url( '/assets/images/favicon.png', '/bunbukan-eu/public/images/Bunbukan-Brussels-favicon.png' )
+		? bunbukan_asset_url( '/assets/images/logos/Bunbukan-Brussels-Icon.png' )
 		: '';
 	if ( $favicon_url ) :
 		?>
@@ -39,9 +39,9 @@
 				if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
 					the_custom_logo();
 				} else {
-					// Use Bunbukan logo
+					// Use Bunbukan Brussels Icon logo
 					$logo_url = function_exists( 'bunbukan_asset_url' )
-						? ( bunbukan_asset_url( '/assets/images/bunbukan.jpg' ) ?: bunbukan_asset_url( '/assets/images/logoBBK32.jpg' ) )
+						? bunbukan_asset_url( '/assets/images/logos/Bunbukan-Brussels-Icon.png' )
 						: '';
 					if ( $logo_url ) :
 						?>
