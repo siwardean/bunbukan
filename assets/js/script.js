@@ -251,6 +251,59 @@
 		headers.forEach(header => observer.observe(header));
 	}
 
+	// Disciplines background logos parallax effect
+	function initDisciplinesParallax() {
+		const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		if (reduceMotion) return;
+
+		// Avoid heavy effects on small screens
+		const isMobile = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+		if (isMobile) return;
+
+		const disciplineCards = document.querySelectorAll('.bb-discipline-card');
+		if (!disciplineCards.length) return;
+
+		const bgLogos = document.querySelectorAll('.bb-discipline-card__bg-logo');
+		if (!bgLogos.length) return;
+
+		let ticking = false;
+
+		function update() {
+			ticking = false;
+			
+			bgLogos.forEach(logo => {
+				const card = logo.closest('.bb-discipline-card');
+				if (!card) return;
+
+				const rect = card.getBoundingClientRect();
+				const viewportH = window.innerHeight || 1;
+				const cardCenter = rect.top + rect.height / 2;
+				const viewportCenter = viewportH / 2;
+				
+				// Calculate distance from viewport center
+				const distance = cardCenter - viewportCenter;
+				// Normalize: -1 when card is above viewport, 0 when centered, 1 when below
+				const normalizedDistance = distance / viewportH;
+				
+				// Parallax offset: more pronounced movement (max 60px)
+				const parallaxOffset = normalizedDistance * 60;
+				
+				// Apply transform with smooth transition
+				logo.style.transform = `translate(-50%, calc(-50% + ${parallaxOffset}px))`;
+			});
+		}
+
+		function onScroll() {
+			if (ticking) return;
+			ticking = true;
+			window.requestAnimationFrame(update);
+		}
+
+		window.addEventListener('scroll', onScroll, { passive: true });
+		window.addEventListener('resize', onScroll);
+		update();
+	}
+
 	// Initialize on DOM ready
 	if (document.readyState === 'loading') {
 		document.addEventListener('DOMContentLoaded', function () {
@@ -262,6 +315,7 @@
 			initStatCounters();
 			initFlipCards();
 			initSectionHeaders();
+			initDisciplinesParallax();
 		});
 	} else {
 		initMobileMenu();
@@ -272,6 +326,7 @@
 		initStatCounters();
 		initFlipCards();
 		initSectionHeaders();
+		initDisciplinesParallax();
 	}
 
 })();

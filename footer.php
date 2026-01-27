@@ -73,6 +73,8 @@
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
+<?php get_template_part('template-parts/cookie-consent'); ?>
+
 <?php wp_footer(); ?>
 
 </body>

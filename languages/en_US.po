@@ -3,179 +3,71 @@ msgstr ""
 "Project-Id-Version: Bunbukan 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-23 15:30+0100\n"
-"PO-Revision-Date: 2026-01-23 15:30+0100\n"
+"PO-Revision-Date: 2026-01-27 13:00+0000\n"
 "Last-Translator: Alain <alain@example.com>\n"
-"Language-Team: English <en@li.org>\n"
+"Language-Team: English (United States)\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-KeywordsList: __;esc_html__;esc_attr__;esc_html_e;esc_attr_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;"
 
-msgid "Preserving the authentic traditions of Okinawan martial arts in Brussels"
-msgstr "Preserving the authentic traditions of Okinawan martial arts in Brussels"
-
-msgid "Shitō-Ryū Karate"
-msgstr "Shitō-Ryū Karate"
-
-msgid "Direct lineage from Kenei Mabuni"
-msgstr "Direct lineage from Kenei Mabuni"
-
-msgid "Ryūkyū Kobudō"
-msgstr "Ryūkyū Kobudō"
-
-msgid "Under Nakamoto Masahiro"
-msgstr "Under Nakamoto Masahiro"
-
-msgid "Begin Your Journey"
-msgstr "Begin Your Journey"
-
+#: front-page.php
 msgid "About Bunbukan Brussels"
 msgstr "About Bunbukan Brussels"
 
-msgid "Heritage"
-msgstr "Heritage"
-
-msgid "Mission"
-msgstr "Mission"
-
-msgid "SINCE 1977"
-msgstr "SINCE 1977"
-
-msgid "THE WAY"
-msgstr "THE WAY"
-
-msgid "Part of Budo Club Berchem, we preserve and transmit traditional martial arts as practiced at the Bunbukan Honbu Dōjō in Okinawa."
-msgstr "Part of Budo Club Berchem, we preserve and transmit traditional martial arts as practiced at the Bunbukan Honbu Dōjō in Okinawa."
-
-msgid "Technical depth and character development. Respect for tradition while fostering personal growth through the path of martial arts."
-msgstr "Technical depth and character development. Respect for tradition while fostering personal growth through the path of martial arts."
-
-msgid "Years Teaching"
-msgstr "Years Teaching"
-
-msgid "Experienced Instructors"
-msgstr "Experienced Instructors"
-
-msgid "Authentic"
-msgstr "Authentic"
-
-msgid "Karate & Kobudō"
-msgstr "Karate & Kobudō"
-
-msgid "Since 1979"
-msgstr "Since 1979"
-
-msgid "Since 2001"
-msgstr "Since 2001"
-
-msgid "Kihon"
-msgstr "Kihon"
-
-msgid "Fundamentals"
-msgstr "Fundamentals"
-
-msgid "Kata"
-msgstr "Kata"
-
-msgid "Traditional forms"
-msgstr "Traditional forms"
-
-msgid "Bunkai"
-msgstr "Bunkai"
-
-msgid "Applications"
-msgstr "Applications"
-
-msgid "Sparring"
-msgstr "Sparring"
-
-msgid "Weapons"
-msgstr "Weapons"
-
-msgid "Bō, Sai, Tonfa, Nunchaku..."
-msgstr "Bō, Sai, Tonfa, Nunchaku..."
-
-msgid "Our Instructors"
-msgstr "Our Instructors"
-
-msgid "2nd Dan Shitō-Ryū, Technical Instructor (Karate)"
-msgstr "2nd Dan Shitō-Ryū, Technical Instructor (Karate)"
-
-msgid "Assists in Karate instruction. Focused on precise technique and kata understanding."
-msgstr "Assists in Karate instruction. Focused on precise technique and kata understanding."
-
-msgid "6th Dan Shitō-Ryū (Shihan), Chief Instructor"
-msgstr "6th Dan Shitō-Ryū (Shihan), Chief Instructor"
-
-msgid "Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro."
-msgstr "Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro."
-
-msgid "2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor"
-msgstr "2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor"
-
-msgid "Assists in both Karate and Kobudō. Special focus on Okinawan weapons training."
-msgstr "Assists in both Karate and Kobudō. Special focus on Okinawan weapons training."
-
-msgid "Contact"
-msgstr "Contact"
-
-msgid "New members are always welcome. Come observe a class or join us for a free trial session."
-msgstr "New members are always welcome. Come observe a class or join us for a free trial session."
-
-msgid "Training Schedule"
-msgstr "Training Schedule"
-
-msgid "Wednesday"
-msgstr "Wednesday"
-
-msgid "Friday"
-msgstr "Friday"
-
-msgid "Open to students aged 14 and up. All levels welcome."
-msgstr "Open to students aged 14 and up. All levels welcome."
-
-msgid "Get in Touch"
-msgstr "Get in Touch"
-
-msgid "Questions about training or want to arrange a visit? We would love to hear from you."
-msgstr "Questions about training or want to arrange a visit? We would love to hear from you."
-
-msgid "Send Email"
-msgstr "Send Email"
-
-msgid "View Map"
-msgstr "View Map"
-
+#: front-page.php
 msgid "Affiliations"
 msgstr "Affiliations"
 
-msgid "Bunbukan Brussels"
-msgstr "Bunbukan Brussels"
+#: front-page.php
+msgid "Begin Your Journey"
+msgstr "Begin Your Journey"
 
-msgid "Traditional Okinawan Martial Arts in Brussels"
-msgstr "Traditional Okinawan Martial Arts in Brussels"
+#: front-page.php
+msgid "Budo Club Berchem logo"
+msgstr "Budo Club Berchem logo"
 
-msgid "Location"
-msgstr "Location"
+#: front-page.php
+msgid "Contact Us"
+msgstr "Contact Us"
 
-msgid "Part of Budo Club Berchem"
-msgstr "Part of Budo Club Berchem"
+#: front-page.php
+msgid "Interested in Training?"
+msgstr "Interested in Training?"
 
-msgid "All rights reserved."
-msgstr "All rights reserved."
+#: front-page.php
+msgid "Join a Class"
+msgstr "Join a Class"
 
-msgid "Home"
-msgstr "Home"
+#: front-page.php
+msgid "Karate & Kobudō"
+msgstr "Karate & Kobudō"
 
-msgid "About"
-msgstr "About"
+#: header.php
+msgid "Language switcher"
+msgstr "Language switcher"
 
-msgid "Disciplines"
-msgstr "Disciplines"
+#: front-page.php
+msgid "Our Heritage"
+msgstr "Our Heritage"
 
-msgid "Instructors"
-msgstr "Instructors"
+#: front-page.php
+msgid "Our Instructors"
+msgstr "Our Instructors"
+
+#: front-page.php
+msgid "Our Mission"
+msgstr "Our Mission"
+
+#: front-page.php
+msgid "Send Email"
+msgstr "Send Email"
+
+#: front-page.php
+msgid "The Dōjō"
+msgstr "The Dōjō"

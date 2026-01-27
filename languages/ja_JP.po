@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bunbukan 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-23 15:30+0100\n"
-"PO-Revision-Date: 2026-01-27 12:56+0000\n"
-"Last-Translator: Alain <alain@example.com>\n"
-"Language-Team: Dutch\n"
-"Language: nl_NL\n"
+"POT-Creation-Date: 2026-01-24 12:00+0100\n"
+"PO-Revision-Date: 2026-01-27 13:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Japanese (Japan)\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,60 +14,60 @@ msgstr ""
 "X-Poedit-KeywordsList: __;esc_html__;esc_attr__;esc_html_e;esc_attr_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
-"Plural-Forms: nplurals=2; plural=n != 1;"
+"Plural-Forms: nplurals=1; plural=0;"
 
 #: front-page.php
 msgid "About Bunbukan Brussels"
-msgstr "Over Bunbukan Brussels"
+msgstr "ブリュッセル文武館について"
 
 #: front-page.php
 msgid "Affiliations"
-msgstr "Affiliaties"
+msgstr "所属団体"
 
 #: front-page.php
 msgid "Begin Your Journey"
-msgstr "Begin uw reis"
+msgstr "あなたの旅を始める"
 
 #: front-page.php
 msgid "Budo Club Berchem logo"
-msgstr "Budo Club Berchem logo"
+msgstr "武道クラブ・ベルケムロゴ"
 
 #: front-page.php
 msgid "Contact Us"
-msgstr "Contacteer ons"
+msgstr "お問い合わせ"
 
 #: front-page.php
 msgid "Interested in Training?"
-msgstr "Geïnteresseerd in training?"
+msgstr "練習に興味がありますか？"
 
 #: front-page.php
 msgid "Join a Class"
-msgstr "Doe mee aan een les"
+msgstr "クラスに参加する"
 
 #: front-page.php
 msgid "Karate & Kobudō"
-msgstr "Karate & Kobudō"
+msgstr "空手道と古武道"
 
 #: header.php
 msgid "Language switcher"
-msgstr "Taalwisselaar"
+msgstr "言語切り替え"
 
 #: front-page.php
 msgid "Our Heritage"
-msgstr "Ons erfgoed"
+msgstr "私たちの伝統"
 
 #: front-page.php
 msgid "Our Instructors"
-msgstr "Onze instructeurs"
+msgstr "私たちの指導者"
 
 #: front-page.php
 msgid "Our Mission"
-msgstr "Onze missie"
+msgstr "私たちの使命"
 
 #: front-page.php
 msgid "Send Email"
-msgstr "Email verzenden"
+msgstr "メールを送信"
 
 #: front-page.php
 msgid "The Dōjō"
-msgstr "Het Dōjō"
+msgstr "道場"

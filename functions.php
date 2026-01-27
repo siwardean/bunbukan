@@ -249,6 +249,16 @@ function bunbukan_scripts()
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
+
+	// Cookie consent script
+	if (file_exists(get_template_directory() . '/assets/js/cookie-consent.js')) {
+		$cookie_script_ver = BUNBUKAN_VERSION;
+		$cookie_script_path = get_template_directory() . '/assets/js/cookie-consent.js';
+		if (file_exists($cookie_script_path)) {
+			$cookie_script_ver = (string) filemtime($cookie_script_path);
+		}
+		wp_enqueue_script('bunbukan-cookie-consent', get_template_directory_uri() . '/assets/js/cookie-consent.js', array(), $cookie_script_ver, true);
+	}
 }
 add_action('wp_enqueue_scripts', 'bunbukan_scripts');
 

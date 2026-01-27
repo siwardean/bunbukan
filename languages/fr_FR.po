@@ -3,179 +3,71 @@ msgstr ""
 "Project-Id-Version: Bunbukan 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-23 15:30+0100\n"
-"PO-Revision-Date: 2026-01-23 15:30+0100\n"
+"PO-Revision-Date: 2026-01-27 13:00+0000\n"
 "Last-Translator: Alain <alain@example.com>\n"
-"Language-Team: French <fr@li.org>\n"
+"Language-Team: French (France)\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-KeywordsList: __;esc_html__;esc_attr__;esc_html_e;esc_attr_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
+"Plural-Forms: nplurals=2; plural=n > 1;"
 
-msgid "Preserving the authentic traditions of Okinawan martial arts in Brussels"
-msgstr "Préserver les traditions authentiques des arts martiaux d'Okinawa à Bruxelles"
-
-msgid "Shitō-Ryū Karate"
-msgstr "Shitō-Ryū Karaté"
-
-msgid "Direct lineage from Kenei Mabuni"
-msgstr "Lignée directe de Kenei Mabuni"
-
-msgid "Ryūkyū Kobudō"
-msgstr "Ryūkyū Kobudō"
-
-msgid "Under Nakamoto Masahiro"
-msgstr "Sous la direction de Nakamoto Masahiro"
-
-msgid "Begin Your Journey"
-msgstr "Commencez votre voyage"
-
+#: front-page.php
 msgid "About Bunbukan Brussels"
 msgstr "À propos du Bunbukan Brussels"
 
-msgid "Heritage"
-msgstr "Héritage"
-
-msgid "Mission"
-msgstr "Mission"
-
-msgid "SINCE 1977"
-msgstr "DEPUIS 1977"
-
-msgid "THE WAY"
-msgstr "LA VOIE"
-
-msgid "Part of Budo Club Berchem, we preserve and transmit traditional martial arts as practiced at the Bunbukan Honbu Dōjō in Okinawa."
-msgstr "Faisant partie du Budo Club Berchem, nous préservons et transmettons les arts martiaux traditionnels tels que pratiqués au Bunbukan Honbu Dōjō à Okinawa."
-
-msgid "Technical depth and character development. Respect for tradition while fostering personal growth through the path of martial arts."
-msgstr "Profondeur technique et développement du caractère. Respect de la tradition tout en favorisant l'épanouissement personnel par la voie des arts martiaux."
-
-msgid "Years Teaching"
-msgstr "Années d'enseignement"
-
-msgid "Experienced Instructors"
-msgstr "Instructeurs expérimentés"
-
-msgid "Authentic"
-msgstr "Authentique"
-
-msgid "Karate & Kobudō"
-msgstr "Karaté & Kobudō"
-
-msgid "Since 1979"
-msgstr "Depuis 1979"
-
-msgid "Since 2001"
-msgstr "Depuis 2001"
-
-msgid "Kihon"
-msgstr "Kihon"
-
-msgid "Fundamentals"
-msgstr "Fondamentaux"
-
-msgid "Kata"
-msgstr "Kata"
-
-msgid "Traditional forms"
-msgstr "Formes traditionnelles"
-
-msgid "Bunkai"
-msgstr "Bunkai"
-
-msgid "Applications"
-msgstr "Applications"
-
-msgid "Sparring"
-msgstr "Combat"
-
-msgid "Weapons"
-msgstr "Armes"
-
-msgid "Bō, Sai, Tonfa, Nunchaku..."
-msgstr "Bō, Sai, Tonfa, Nunchaku..."
-
-msgid "Our Instructors"
-msgstr "Nos Instructeurs"
-
-msgid "2nd Dan Shitō-Ryū, Technical Instructor (Karate)"
-msgstr "2ème Dan Shitō-Ryū, Instructeur Technique (Karaté)"
-
-msgid "Assists in Karate instruction. Focused on precise technique and kata understanding."
-msgstr "Assiste dans l'enseignement du Karaté. Concentré sur la technique précise et la compréhension des katas."
-
-msgid "6th Dan Shitō-Ryū (Shihan), Chief Instructor"
-msgstr "6ème Dan Shitō-Ryū (Shihan), Instructeur en Chef"
-
-msgid "Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro."
-msgstr "Plus de 50 ans d'expérience dans les arts martiaux. Élève direct de Kenei Mabuni et Nakamoto Masahiro."
-
-msgid "2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor"
-msgstr "2ème Dan Shitō-Ryū, Ceinture Noire en Kobudō, Instructeur Technique"
-
-msgid "Assists in both Karate and Kobudō. Special focus on Okinawan weapons training."
-msgstr "Assiste en Karaté et en Kobudō. Accent particulier sur l'entraînement aux armes d'Okinawa."
-
-msgid "Contact"
-msgstr "Contact"
-
-msgid "New members are always welcome. Come observe a class or join us for a free trial session."
-msgstr "Les nouveaux membres sont toujours les bienvenus. Venez observer un cours ou rejoignez-nous pour une séance d'essai gratuite."
-
-msgid "Training Schedule"
-msgstr "Horaires des entraînements"
-
-msgid "Wednesday"
-msgstr "Mercredi"
-
-msgid "Friday"
-msgstr "Vendredi"
-
-msgid "Open to students aged 14 and up. All levels welcome."
-msgstr "Ouvert aux élèves de 14 ans et plus. Tous niveaux bienvenus."
-
-msgid "Get in Touch"
-msgstr "Contactez-nous"
-
-msgid "Questions about training or want to arrange a visit? We would love to hear from you."
-msgstr "Des questions sur l'entraînement ou vous souhaitez organiser une visite ? Nous serions ravis d'avoir de vos nouvelles."
-
-msgid "Send Email"
-msgstr "Envoyer un e-mail"
-
-msgid "View Map"
-msgstr "Voir le plan"
-
+#: front-page.php
 msgid "Affiliations"
 msgstr "Affiliations"
 
-msgid "Bunbukan Brussels"
-msgstr "Bunbukan Brussels"
+#: front-page.php
+msgid "Begin Your Journey"
+msgstr "Commencez votre voyage"
 
-msgid "Traditional Okinawan Martial Arts in Brussels"
-msgstr "Arts martiaux traditionnels d'Okinawa à Bruxelles"
+#: front-page.php
+msgid "Budo Club Berchem logo"
+msgstr "Logo Budo Club Berchem"
 
-msgid "Location"
-msgstr "Emplacement"
+#: front-page.php
+msgid "Contact Us"
+msgstr "Contactez-nous"
 
-msgid "Part of Budo Club Berchem"
-msgstr "Affilié au Budo Club Berchem"
+#: front-page.php
+msgid "Interested in Training?"
+msgstr "Intéressé par l'entraînement ?"
 
-msgid "All rights reserved."
-msgstr "Tous droits réservés."
+#: front-page.php
+msgid "Join a Class"
+msgstr "Rejoindre un cours"
 
-msgid "Home"
-msgstr "Accueil"
+#: front-page.php
+msgid "Karate & Kobudō"
+msgstr "Karaté & Kobudō"
 
-msgid "About"
-msgstr "À propos"
+#: header.php
+msgid "Language switcher"
+msgstr "Sélecteur de langue"
 
-msgid "Disciplines"
-msgstr "Disciplines"
+#: front-page.php
+msgid "Our Heritage"
+msgstr "Notre héritage"
 
-msgid "Instructors"
-msgstr "Instructeurs"
+#: front-page.php
+msgid "Our Instructors"
+msgstr "Nos Instructeurs"
+
+#: front-page.php
+msgid "Our Mission"
+msgstr "Notre mission"
+
+#: front-page.php
+msgid "Send Email"
+msgstr "Envoyer un e-mail"
+
+#: front-page.php
+msgid "The Dōjō"
+msgstr "Le Dōjō"
