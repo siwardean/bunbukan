@@ -363,7 +363,7 @@ function bunbukan_page_media_meta_box_callback($post)
 		'label' => 'Image de fond Hero',
 		'field_name' => 'hero_background',
 		'image' => $hero_bg,
-		'default' => get_template_directory_uri() . '/assets/images/shuri-castle.gif',
+		'default' => get_template_directory_uri() . '/assets/images/hero/hero-background.gif',
 	);
 
 	// About Image 1
@@ -372,7 +372,7 @@ function bunbukan_page_media_meta_box_callback($post)
 		'label' => 'Image À propos 1',
 		'field_name' => 'about_image',
 		'image' => $about_image,
-		'default' => get_template_directory_uri() . '/assets/images/DSC01113.JPG',
+		'default' => get_template_directory_uri() . '/assets/images/about/about-heritage.jpg',
 	);
 
 	// About Image 2 (slideshow)
@@ -381,7 +381,7 @@ function bunbukan_page_media_meta_box_callback($post)
 		'label' => 'Image À propos 2 (slideshow)',
 		'field_name' => 'about_image_2',
 		'image' => $about_image_2,
-		'default' => get_template_directory_uri() . '/assets/images/Alain-_-Soke-Mabuni-_-Nakahashi.JPG',
+		'default' => get_template_directory_uri() . '/assets/images/about/about-masters.jpg',
 	);
 
 	// Karate Image
@@ -390,7 +390,7 @@ function bunbukan_page_media_meta_box_callback($post)
 		'label' => 'Image Karate',
 		'field_name' => 'karate_image',
 		'image' => $karate_image,
-		'default' => get_template_directory_uri() . '/assets/images/makiwara-tsuki.jpg',
+		'default' => get_template_directory_uri() . '/assets/images/disciplines/discipline-karate.jpg',
 	);
 
 	// Karate Logo
@@ -399,7 +399,7 @@ function bunbukan_page_media_meta_box_callback($post)
 		'label' => 'Logo Karate (fond)',
 		'field_name' => 'karate_logo',
 		'image' => $karate_logo,
-		'default' => get_template_directory_uri() . '/assets/images/shito-ryu-logo.jpg',
+		'default' => get_template_directory_uri() . '/assets/images/logos/logo-shitoryu.jpg',
 	);
 
 	// Kobudo Image
@@ -408,7 +408,7 @@ function bunbukan_page_media_meta_box_callback($post)
 		'label' => 'Image Kobudō',
 		'field_name' => 'kobudo_image',
 		'image' => $kobudo_image,
-		'default' => get_template_directory_uri() . '/assets/images/makiwara-men-uchi.JPG',
+		'default' => get_template_directory_uri() . '/assets/images/disciplines/discipline-kobudo.jpg',
 	);
 
 	// Kobudo Logo
@@ -417,16 +417,16 @@ function bunbukan_page_media_meta_box_callback($post)
 		'label' => 'Logo Kobudō (fond)',
 		'field_name' => 'kobudo_logo',
 		'image' => $kobudo_logo,
-		'default' => get_template_directory_uri() . '/assets/images/bunbukan-bg-logo.png',
+		'default' => get_template_directory_uri() . '/assets/images/logos/logo-bunbukan-bg.png',
 	);
 
 	// Instructor Images
 	for ($i = 1; $i <= 3; $i++) {
 		$instructor_image = bunbukan_get_field("instructor_{$i}_image", $post->ID);
 		$default_images = array(
-			1 => '/assets/images/arnaud-enhanced.png',
-			2 => '/assets/images/SAI-FINAL.jpg',
-			3 => '/assets/images/quentin-enhanced.png',
+			1 => '/assets/images/instructors/instructor-arnaud.png',
+			2 => '/assets/images/instructors/instructor-alain.jpg',
+			3 => '/assets/images/instructors/instructor-quentin.png',
 		);
 		$instructor_names = array(
 			1 => 'Arnaud',

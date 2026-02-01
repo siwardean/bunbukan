@@ -66,7 +66,7 @@ if (!function_exists('bunbukan_attachment_url_by_slug')) {
 // ============================================================================
 
 // Hero Section
-$hero_bg_url = bunbukan_get_image_field('hero_background', '/assets/images/shuri-castle.gif', $page_id);
+$hero_bg_url = bunbukan_get_image_field('hero_background', '/assets/images/hero/hero-background.gif', $page_id);
 $hero_title_jp = bunbukan_get_text_field('hero_title_jp', '文武館', $page_id);
 $hero_title_en = bunbukan_get_text_field('hero_title_en', 'Bunbukan Brussels', $page_id);
 $hero_subtitle = bunbukan_get_wysiwyg_field('hero_subtitle', 'Preserving the authentic traditions of Okinawan martial arts in Brussels', $page_id);
@@ -116,23 +116,16 @@ $kobudo_logo = bunbukan_get_image_field('kobudo_logo', '', $page_id);
 
 // Fallbacks for discipline images/logos
 if (!$karate_logo) {
-	$karate_logo = bunbukan_attachment_url_by_slug('shito-ryu-logo')
-		?: bunbukan_find_image('shito-ryu-logo', array('/assets/images/logos/', '/assets/images/', '/bunbukan-eu/public/images/'))
-		?: bunbukan_find_image('shitoryu', array('/assets/images/logos/', '/assets/images/', '/bunbukan-eu/public/images/'));
+	$karate_logo = bunbukan_asset_url('/assets/images/logos/logo-shitoryu.jpg');
 }
 if (!$kobudo_logo) {
-	$kobudo_logo = bunbukan_attachment_url_by_slug('bunbukan-background-logo-copy')
-		?: bunbukan_find_image('bunbukan-background-logo-copy', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'))
-		?: bunbukan_find_image('bunbukan-bg-logo', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'))
-		?: bunbukan_find_image('bunbukan-logo', array('/assets/images/', '/assets/images/logos/', '/bunbukan-eu/public/images/'));
+	$kobudo_logo = bunbukan_asset_url('/assets/images/logos/logo-bunbukan-bg.png');
 }
 if (!$karate_image) {
-	$karate_image = bunbukan_attachment_url_by_slug('makiwara-tsuki')
-		?: bunbukan_find_image('makiwara-tsuki', array('/assets/images/', '/assets/images/disciplines/', '/bunbukan-eu/public/images/'));
+	$karate_image = bunbukan_asset_url('/assets/images/disciplines/discipline-karate.jpg');
 }
 if (!$kobudo_image) {
-	$kobudo_image = bunbukan_attachment_url_by_slug('makiwara-men-uchi')
-		?: bunbukan_find_image('makiwara-men-uchi', array('/assets/images/', '/assets/images/disciplines/', '/bunbukan-eu/public/images/'));
+	$kobudo_image = bunbukan_asset_url('/assets/images/disciplines/discipline-kobudo.jpg');
 }
 
 // Instructors Section
@@ -141,15 +134,15 @@ $instructor_1 = bunbukan_get_instructor(1, $page_id);
 $instructor_2 = bunbukan_get_instructor(2, $page_id);
 $instructor_3 = bunbukan_get_instructor(3, $page_id);
 
-// Fallback for instructor images using bunbukan_find_image
+// Fallback for instructor images
 if (!$instructor_1['image']) {
-	$instructor_1['image'] = bunbukan_find_image('arnaud-enhanced', array('/assets/images/', '/bunbukan-eu/public/images/'));
+	$instructor_1['image'] = bunbukan_asset_url('/assets/images/instructors/instructor-arnaud.png');
 }
 if (!$instructor_2['image']) {
-	$instructor_2['image'] = bunbukan_find_image('SAI-FINAL', array('/assets/images/', '/bunbukan-eu/public/images/'));
+	$instructor_2['image'] = bunbukan_asset_url('/assets/images/instructors/instructor-alain.jpg');
 }
 if (!$instructor_3['image']) {
-	$instructor_3['image'] = bunbukan_find_image('quentin-enhanced', array('/assets/images/', '/bunbukan-eu/public/images/'));
+	$instructor_3['image'] = bunbukan_asset_url('/assets/images/instructors/instructor-quentin.png');
 }
 
 $instructors = array($instructor_1, $instructor_2, $instructor_3);
@@ -192,17 +185,14 @@ for ($i = 1; $i <= 7; $i++) {
 				$bunbukan_logo_url = $custom_logo_id ? wp_get_attachment_image_url($custom_logo_id, 'full') : '';
 			}
 			if (!$bunbukan_logo_url && function_exists('bunbukan_asset_url')) {
-				$bunbukan_logo_url = bunbukan_asset_url('/assets/images/bunbukan.jpg')
-					?: bunbukan_asset_url('/assets/images/logos/Bunbukan-Brussels-Icon.png')
-					?: bunbukan_asset_url('/assets/images/logoBBK32.jpg');
+				$bunbukan_logo_url = bunbukan_asset_url('/assets/images/logos/logo-bunbukan.jpg')
+					?: bunbukan_asset_url('/assets/images/logos/Bunbukan-Brussels-Icon.png');
 			}
 
 			// Shito-Ryu logo (front of coin)
 			$shitoryu_logo_url = '';
 			if (function_exists('bunbukan_asset_url')) {
-				$shitoryu_logo_url = bunbukan_asset_url('/assets/images/shito-ryu-logo.jpg')
-					?: bunbukan_asset_url('/assets/images/shito-ryu-logo.png')
-					?: bunbukan_asset_url('/assets/images/logos/shito-ryu-logo.jpg');
+				$shitoryu_logo_url = bunbukan_asset_url('/assets/images/logos/logo-shitoryu.jpg');
 			}
 
 			if ($bunbukan_logo_url || $shitoryu_logo_url):
@@ -272,7 +262,7 @@ for ($i = 1; $i <= 7; $i++) {
 						// Second image for slideshow
 						$about_image_2 = bunbukan_get_image_field('about_image_2', '', $page_id);
 						if (!$about_image_2) {
-							$about_image_2 = bunbukan_asset_url('/assets/images/Alain-_-Soke-Mabuni-_-Nakahashi.JPG');
+							$about_image_2 = bunbukan_asset_url('/assets/images/about/about-masters.jpg');
 						}
 						?>
 						<?php if ($about_image): ?>
