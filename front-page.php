@@ -265,12 +265,27 @@ for ($i = 1; $i <= 7; $i++) {
 			</div>
 
 			<div class="bb-about__composition">
-				<!-- Full-width image panel -->
+				<!-- Full-width image panel with fade effect -->
 				<div class="bb-about__image-panel bb-scroll-reveal bb-scroll-reveal--left">
-					<div class="bb-about__image">
+					<div class="bb-about__image bb-about__image--slideshow" data-bb-slideshow>
+						<?php 
+						// Second image for slideshow
+						$about_image_2 = bunbukan_get_image_field('about_image_2', '', $page_id);
+						if (!$about_image_2) {
+							$about_image_2 = bunbukan_asset_url('/assets/images/Alain-_-Soke-Mabuni-_-Nakahashi.JPG');
+						}
+						?>
 						<?php if ($about_image): ?>
 							<img src="<?php echo esc_url($about_image); ?>"
-								alt="<?php echo esc_attr__('Bunbukan Brussels heritage', 'bunbukan'); ?>" loading="lazy" />
+								alt="<?php echo esc_attr__('Bunbukan Brussels heritage', 'bunbukan'); ?>" 
+								loading="lazy" 
+								class="bb-about__slideshow-img bb-about__slideshow-img--active" />
+						<?php endif; ?>
+						<?php if ($about_image_2): ?>
+							<img src="<?php echo esc_url($about_image_2); ?>"
+								alt="<?php echo esc_attr__('Alain Berckmans with Soke Mabuni and Nakahashi', 'bunbukan'); ?>" 
+								loading="lazy" 
+								class="bb-about__slideshow-img" />
 						<?php endif; ?>
 					</div>
 				</div>

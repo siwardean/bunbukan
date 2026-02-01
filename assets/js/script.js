@@ -304,6 +304,33 @@
 		update();
 	}
 
+	// About section image slideshow with fade effect
+	function initAboutSlideshow() {
+		const slideshows = document.querySelectorAll('[data-bb-slideshow]');
+		
+		slideshows.forEach(slideshow => {
+			const images = slideshow.querySelectorAll('.bb-about__slideshow-img');
+			if (images.length < 2) return;
+			
+			let currentIndex = 0;
+			const interval = 5000; // 5 seconds between transitions
+			
+			function showNextImage() {
+				// Remove active class from current image
+				images[currentIndex].classList.remove('bb-about__slideshow-img--active');
+				
+				// Move to next image
+				currentIndex = (currentIndex + 1) % images.length;
+				
+				// Add active class to next image
+				images[currentIndex].classList.add('bb-about__slideshow-img--active');
+			}
+			
+			// Start the slideshow
+			setInterval(showNextImage, interval);
+		});
+	}
+
 	// Initialize on DOM ready
 	if (document.readyState === 'loading') {
 		document.addEventListener('DOMContentLoaded', function () {
@@ -316,6 +343,7 @@
 			initFlipCards();
 			initSectionHeaders();
 			initDisciplinesParallax();
+			initAboutSlideshow();
 		});
 	} else {
 		initMobileMenu();
@@ -327,6 +355,7 @@
 		initFlipCards();
 		initSectionHeaders();
 		initDisciplinesParallax();
+		initAboutSlideshow();
 	}
 
 })();

@@ -320,6 +320,14 @@ function bunbukan_get_pods_fields_config()
 					'weight' => 1,
 				),
 				array(
+					'name' => 'about_image_2',
+					'label' => 'Image Secondaire (slideshow)',
+					'type' => 'file',
+					'file_format_type' => 'single',
+					'file_type' => 'images',
+					'weight' => 2,
+				),
+				array(
 					'name' => 'about_heritage_label',
 					'label' => 'Heritage - Label',
 					'type' => 'text',

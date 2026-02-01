@@ -366,13 +366,22 @@ function bunbukan_page_media_meta_box_callback($post)
 		'default' => get_template_directory_uri() . '/assets/images/shuri-castle.gif',
 	);
 
-	// About Image
+	// About Image 1
 	$about_image = bunbukan_get_field('about_image', $post->ID);
 	$images_found[] = array(
-		'label' => 'Image À propos',
+		'label' => 'Image À propos 1',
 		'field_name' => 'about_image',
 		'image' => $about_image,
 		'default' => get_template_directory_uri() . '/assets/images/DSC01113.JPG',
+	);
+
+	// About Image 2 (slideshow)
+	$about_image_2 = bunbukan_get_field('about_image_2', $post->ID);
+	$images_found[] = array(
+		'label' => 'Image À propos 2 (slideshow)',
+		'field_name' => 'about_image_2',
+		'image' => $about_image_2,
+		'default' => get_template_directory_uri() . '/assets/images/Alain-_-Soke-Mabuni-_-Nakahashi.JPG',
 	);
 
 	// Karate Image
