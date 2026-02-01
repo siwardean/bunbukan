@@ -331,6 +331,51 @@
 		});
 	}
 
+	// Language dropdown (opens upward)
+	function initLanguageDropdown() {
+		const dropdowns = document.querySelectorAll('[data-dropdown]');
+		
+		dropdowns.forEach(dropdown => {
+			const toggle = dropdown.querySelector('.language-dropdown__toggle');
+			if (!toggle) return;
+			
+			toggle.addEventListener('click', function(e) {
+				e.stopPropagation();
+				const isOpen = dropdown.hasAttribute('data-open');
+				
+				// Close all dropdowns first
+				dropdowns.forEach(d => {
+					d.removeAttribute('data-open');
+					d.querySelector('.language-dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+				});
+				
+				// Toggle current
+				if (!isOpen) {
+					dropdown.setAttribute('data-open', '');
+					toggle.setAttribute('aria-expanded', 'true');
+				}
+			});
+		});
+		
+		// Close on click outside
+		document.addEventListener('click', function() {
+			dropdowns.forEach(d => {
+				d.removeAttribute('data-open');
+				d.querySelector('.language-dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+			});
+		});
+		
+		// Close on Escape
+		document.addEventListener('keydown', function(e) {
+			if (e.key === 'Escape') {
+				dropdowns.forEach(d => {
+					d.removeAttribute('data-open');
+					d.querySelector('.language-dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+				});
+			}
+		});
+	}
+
 	// Initialize on DOM ready
 	if (document.readyState === 'loading') {
 		document.addEventListener('DOMContentLoaded', function () {
@@ -344,6 +389,7 @@
 			initSectionHeaders();
 			initDisciplinesParallax();
 			initAboutSlideshow();
+			initLanguageDropdown();
 		});
 	} else {
 		initMobileMenu();
@@ -356,6 +402,7 @@
 		initSectionHeaders();
 		initDisciplinesParallax();
 		initAboutSlideshow();
+		initLanguageDropdown();
 	}
 
 })();
