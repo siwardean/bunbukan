@@ -313,7 +313,7 @@
 			if (images.length < 2) return;
 			
 			let currentIndex = 0;
-			const interval = 5000; // 5 seconds between transitions
+			const interval = 10000; // 10 seconds between transitions
 			
 			function showNextImage() {
 				// Remove active class from current image
