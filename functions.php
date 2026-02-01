@@ -12,6 +12,13 @@ if (!defined('BUNBUKAN_VERSION')) {
 }
 
 /**
+ * Load Pods configuration and helpers
+ */
+require_once get_template_directory() . '/inc/pods-config.php';
+require_once get_template_directory() . '/inc/pods-helpers.php';
+require_once get_template_directory() . '/inc/pods-migration-data.php';
+
+/**
  * Asset helper: prefer theme asset, fallback to React bunbukan-eu asset if theme file missing.
  *
  * @param string $theme_rel Rel path from theme root, like '/assets/images/logo.png'
@@ -318,3 +325,189 @@ function bunbukan_search_form($form)
 	return $form;
 }
 add_filter('get_search_form', 'bunbukan_search_form', 40);
+
+/**
+ * Add meta box to display media used on the front page
+ */
+function bunbukan_add_page_media_meta_box()
+{
+	add_meta_box(
+		'bunbukan-page-media',
+		__('Médias utilisés sur la page', 'bunbukan'),
+		'bunbukan_page_media_meta_box_callback',
+		'page',
+		'side',
+		'low'
+	);
+}
+add_action('add_meta_boxes', 'bunbukan_add_page_media_meta_box');
+
+/**
+ * Display media meta box content
+ */
+function bunbukan_page_media_meta_box_callback($post)
+{
+	$template = get_page_template_slug($post->ID);
+	$is_front_page = (get_option('page_on_front') == $post->ID);
+	$images_found = array();
+
+	// Only show for front page
+	if (!$is_front_page && $template !== 'front-page.php') {
+		echo '<p style="padding: 10px; color: #666; font-style: italic;">Cette meta box n\'affiche les médias que pour la page d\'accueil.</p>';
+		return;
+	}
+
+	// Hero Background
+	$hero_bg = bunbukan_get_field('hero_background', $post->ID);
+	$images_found[] = array(
+		'label' => 'Image de fond Hero',
+		'field_name' => 'hero_background',
+		'image' => $hero_bg,
+		'default' => get_template_directory_uri() . '/assets/images/shuri-castle.gif',
+	);
+
+	// About Image
+	$about_image = bunbukan_get_field('about_image', $post->ID);
+	$images_found[] = array(
+		'label' => 'Image À propos',
+		'field_name' => 'about_image',
+		'image' => $about_image,
+		'default' => get_template_directory_uri() . '/assets/images/DSC01113.JPG',
+	);
+
+	// Karate Image
+	$karate_image = bunbukan_get_field('karate_image', $post->ID);
+	$images_found[] = array(
+		'label' => 'Image Karate',
+		'field_name' => 'karate_image',
+		'image' => $karate_image,
+		'default' => get_template_directory_uri() . '/assets/images/makiwara-tsuki.jpg',
+	);
+
+	// Karate Logo
+	$karate_logo = bunbukan_get_field('karate_logo', $post->ID);
+	$images_found[] = array(
+		'label' => 'Logo Karate (fond)',
+		'field_name' => 'karate_logo',
+		'image' => $karate_logo,
+		'default' => get_template_directory_uri() . '/assets/images/shito-ryu-logo.jpg',
+	);
+
+	// Kobudo Image
+	$kobudo_image = bunbukan_get_field('kobudo_image', $post->ID);
+	$images_found[] = array(
+		'label' => 'Image Kobudō',
+		'field_name' => 'kobudo_image',
+		'image' => $kobudo_image,
+		'default' => get_template_directory_uri() . '/assets/images/makiwara-men-uchi.JPG',
+	);
+
+	// Kobudo Logo
+	$kobudo_logo = bunbukan_get_field('kobudo_logo', $post->ID);
+	$images_found[] = array(
+		'label' => 'Logo Kobudō (fond)',
+		'field_name' => 'kobudo_logo',
+		'image' => $kobudo_logo,
+		'default' => get_template_directory_uri() . '/assets/images/bunbukan-bg-logo.png',
+	);
+
+	// Instructor Images
+	for ($i = 1; $i <= 3; $i++) {
+		$instructor_image = bunbukan_get_field("instructor_{$i}_image", $post->ID);
+		$default_images = array(
+			1 => '/assets/images/arnaud-enhanced.png',
+			2 => '/assets/images/SAI-FINAL.jpg',
+			3 => '/assets/images/quentin-enhanced.png',
+		);
+		$instructor_names = array(
+			1 => 'Arnaud',
+			2 => 'Alain',
+			3 => 'Quentin',
+		);
+		$images_found[] = array(
+			'label' => 'Photo Instructeur ' . $i . ' (' . $instructor_names[$i] . ')',
+			'field_name' => "instructor_{$i}_image",
+			'image' => $instructor_image,
+			'default' => get_template_directory_uri() . $default_images[$i],
+		);
+	}
+
+	// Affiliation Logos
+	$affiliation_names = array(
+		1 => 'Budo Club Berchem',
+		2 => 'VKA',
+		3 => 'Shitokai Belgium',
+		4 => 'Dento Shito-Ryu',
+		5 => 'Ono-ha Itto-Ryu',
+		6 => 'Hontai Yoshin Ryu',
+		7 => 'Sport Brussel',
+	);
+	$affiliation_logos = array(
+		1 => '/assets/images/affiliations/budo-club-berchem-ico-3.png',
+		2 => '/assets/images/affiliations/vka-ico.png',
+		3 => '/assets/images/affiliations/shitokai-ico-2.png',
+		4 => '/assets/images/affiliations/dento-shito-ryu-ico-8.png',
+		5 => '/assets/images/affiliations/ono-ha-itto-ryu-ico-7.png',
+		6 => '/assets/images/affiliations/Hontai-Yoshin-ryu-Ju-Jutsu-belgium-ico.jpg',
+		7 => '/assets/images/affiliations/sport-brussel-ico-4.png',
+	);
+
+	for ($i = 1; $i <= 7; $i++) {
+		$aff_logo = bunbukan_get_field("affiliation_{$i}_logo", $post->ID);
+		$images_found[] = array(
+			'label' => 'Logo ' . $affiliation_names[$i],
+			'field_name' => "affiliation_{$i}_logo",
+			'image' => $aff_logo,
+			'default' => get_template_directory_uri() . $affiliation_logos[$i],
+		);
+	}
+
+	if (empty($images_found)) {
+		echo '<p style="padding: 10px; color: #666; font-style: italic;">Aucune image personnalisable détectée sur cette page.</p>';
+		return;
+	}
+
+	?>
+	<div style="padding: 10px 0; max-height: 500px; overflow-y: auto;">
+		<?php foreach ($images_found as $item): ?>
+			<div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #ddd;">
+				<h4 style="margin: 0 0 8px 0; font-size: 12px; color: #333;"><?php echo esc_html($item['label']); ?></h4>
+
+				<?php if ($item['image'] && is_array($item['image']) && isset($item['image']['url'])):
+					$img_url = isset($item['image']['sizes']['thumbnail']) ? $item['image']['sizes']['thumbnail'] : $item['image']['url'];
+					$edit_url = admin_url('post.php?post=' . $item['image']['ID'] . '&action=edit');
+					?>
+					<div style="margin-bottom: 8px;">
+						<a href="<?php echo esc_url($item['image']['url']); ?>" target="_blank">
+							<img src="<?php echo esc_url($img_url); ?>"
+								alt="<?php echo esc_attr($item['image']['alt'] ?? ''); ?>"
+								style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 3px; background: #fff;">
+						</a>
+					</div>
+					<p style="margin: 5px 0; font-size: 11px; color: #666;">
+						<strong>✅ Image personnalisée</strong><br>
+						<a href="<?php echo esc_url($edit_url); ?>" target="_blank" style="font-size: 10px;">Modifier dans la médiathèque</a>
+					</p>
+				<?php elseif (isset($item['default']) && !empty($item['default'])): ?>
+					<div style="margin-bottom: 8px;">
+						<a href="<?php echo esc_url($item['default']); ?>" target="_blank">
+							<img src="<?php echo esc_url($item['default']); ?>"
+								alt="Image par défaut"
+								style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 3px; background: #f5f5f5; opacity: 0.8;">
+						</a>
+					</div>
+					<p style="margin: 5px 0; font-size: 11px; color: #999;">
+						<em>📁 Image par défaut du thème</em><br>
+						<span style="font-size: 10px;">Champ: <code><?php echo esc_html($item['field_name']); ?></code></span>
+					</p>
+				<?php else: ?>
+					<p style="color: #999; font-style: italic; font-size: 11px; margin: 5px 0;">Aucune image définie.</p>
+				<?php endif; ?>
+			</div>
+		<?php endforeach; ?>
+	</div>
+	<p style="margin: 10px 0 0 0; padding-top: 10px; border-top: 1px solid #ddd; font-size: 11px; color: #666;">
+		<strong>💡 Astuce :</strong> Pour remplacer une image par défaut, remplissez le champ Pods correspondant ci-dessous.
+	</p>
+	<?php
+}
