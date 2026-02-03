@@ -1,9 +1,10 @@
+# Dutch (Netherlands) translation for Bunbukan Brussels theme.
 msgid ""
 msgstr ""
-"Project-Id-Version: Bunbukan 1.0.0\n"
+"Project-Id-Version: Bunbukan Brussels 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-23 15:30+0100\n"
-"PO-Revision-Date: 2026-01-27 12:56+0000\n"
+"POT-Creation-Date: 2026-01-27 12:00+0000\n"
+"PO-Revision-Date: 2026-02-03 20:44+0000\n"
 "Last-Translator: Alain <alain@example.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl_NL\n"
@@ -11,63 +12,376 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Poedit-KeywordsList: __;esc_html__;esc_attr__;esc_html_e;esc_attr_e\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Domain: bunbukan\n"
 "Plural-Forms: nplurals=2; plural=n != 1;"
+
+#: front-page.php
+msgid "2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor"
+msgstr "2e Dan Shitō-Ryū, zwarte band Kobudō, technisch instructeur"
+
+#: front-page.php
+msgid "2nd Dan Shitō-Ryū, Technical Instructor (Karate)"
+msgstr "2e Dan Shitō-Ryū, technisch instructeur (Karate)"
+
+#: front-page.php
+msgid "6th Dan Shitō-Ryū (Shihan), Chief Instructor"
+msgstr "6e Dan Shitō-Ryū (Shihan), hoofdinstructeur"
+
+#: footer.php
+msgid "About"
+msgstr "Over"
 
 #: front-page.php
 msgid "About Bunbukan Brussels"
 msgstr "Over Bunbukan Brussels"
 
+#: template-parts/cookie-consent.php
+msgid "Accept"
+msgstr "Accepteren"
+
+#: template-parts/cookie-consent.php
+msgid "Accept cookies"
+msgstr "Cookies accepteren"
+
 #: front-page.php
 msgid "Affiliations"
 msgstr "Affiliaties"
+
+#: footer.php
+msgid "All rights reserved."
+msgstr "Alle rechten voorbehouden."
+
+#: front-page.php
+msgid ""
+"As part of Budo Club Berchem, we preserve and transmit traditional martial "
+"arts taught at the Bunbukan Honbu Dōjō, while also continuing the Shitō-ryū "
+"karate lineage passed down by Kenei Mabuni."
+msgstr ""
+"Als onderdeel van Budo Club Berchem bewaren en dragen we de traditionele "
+"krijgskunsten over die worden onderwezen in het Bunbukan Honbu Dōjō, en "
+"zetten we tegelijk de Shitō-ryū karatelijn voort die door Kenei Mabuni is "
+"doorgegeven."
+
+#: front-page.php
+msgid ""
+"Assists in both Karate and Kobudō. Special focus on Okinawan weapons "
+"training."
+msgstr ""
+"Assisteert in zowel Karate als Kobudō. Bijzondere focus op Okinawaanse "
+"wapentraining."
+
+#: front-page.php
+msgid ""
+"Assists in Karate instruction. Focused on precise technique and kata "
+"understanding."
+msgstr ""
+"Assisteert bij karate-instructie. Gericht op precieze techniek en kata-"
+"begrip."
+
+#: front-page.php
+msgid "Authentic"
+msgstr "Authentiek"
 
 #: front-page.php
 msgid "Begin Your Journey"
 msgstr "Begin uw reis"
 
-#: front-page.php
-msgid "Budo Club Berchem logo"
-msgstr "Budo Club Berchem logo"
+#: footer.php
+msgid "Bunbukan Brussels"
+msgstr "Bunbukan Brussels"
 
 #: front-page.php
-msgid "Contact Us"
-msgstr "Contacteer ons"
+msgid "Bunbukan Brussels heritage"
+msgstr "Erfgoed Bunbukan Brussels"
 
 #: front-page.php
-msgid "Interested in Training?"
-msgstr "Geïnteresseerd in training?"
+msgid "Bunbukan logo"
+msgstr "Bunbukan logo"
+
+#: footer.php
+msgid "Contact"
+msgstr "Contact"
+
+#: template-parts/cookie-consent.php
+msgid "Cookie Consent"
+msgstr "Cookie-toestemming"
+
+#: template-parts/cookie-consent.php
+msgid "Decline"
+msgstr "Weigeren"
+
+#: template-parts/cookie-consent.php
+msgid "Decline cookies"
+msgstr "Cookies weigeren"
 
 #: front-page.php
-msgid "Join a Class"
-msgstr "Doe mee aan een les"
+msgid "Direct lineage from Kenei Mabuni"
+msgstr "Directe afstamming van Kenei Mabuni"
+
+#: footer.php
+msgid "Disciplines"
+msgstr "Disciplines"
+
+#: front-page.php
+msgid "Experienced Instructors"
+msgstr "Ervaren instructeurs"
+
+#: footer.php
+msgid "Facebook"
+msgstr "Facebook"
+
+#: footer.php
+msgid "Follow Us"
+msgstr "Volg ons"
+
+#: functions.php
+msgid "Footer Menu"
+msgstr "Voetmenu"
+
+#: front-page.php
+msgid "Friday"
+msgstr "Vrijdag"
+
+#: front-page.php
+msgid "Get in Touch"
+msgstr "Neem contact op"
+
+#: front-page.php
+msgid "Heritage"
+msgstr "Erfgoed"
+
+#: footer.php
+msgid "Home"
+msgstr "Home"
+
+#: footer.php
+msgid "Instagram"
+msgstr "Instagram"
+
+#: footer.php
+msgid "Instructors"
+msgstr "Instructeurs"
+
+#: template-parts/content-none.php
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "We kunnen niet vinden wat u zoekt. Een zoekopdracht kan helpen."
+
+#: front-page.php
+msgid "Karate"
+msgstr "Karate"
 
 #: front-page.php
 msgid "Karate & Kobudō"
 msgstr "Karate & Kobudō"
 
+#: front-page.php
+msgid ""
+"Karate and kobudō are two sides of the same coin. To understand one, you "
+"must practice the other."
+msgstr ""
+"Karate en kobudō zijn twee kanten van dezelfde medaille. Om het ene te "
+"begrijpen, moet je het andere beoefenen."
+
+#: front-page.php
+msgid "Karate training at makiwara"
+msgstr "Karate training aan makiwara"
+
+#: front-page.php
+msgid "Kobudō training at makiwara"
+msgstr "Kobudō training aan makiwara"
+
 #: header.php
 msgid "Language switcher"
 msgstr "Taalwisselaar"
 
+#: footer.php
+msgid "Location"
+msgstr "Locatie"
+
 #: front-page.php
-msgid "Our Heritage"
-msgstr "Ons erfgoed"
+msgid "Mission"
+msgstr "Missie"
+
+#: front-page.php
+msgid ""
+"New members are always welcome. Come observe a class or join us for a free "
+"trial session."
+msgstr ""
+"Nieuwe leden zijn altijd welkom. Kom een les bijwonen of doe mee met een "
+"gratis proefles."
+
+#: template-parts/content-none.php
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#: front-page.php
+msgid "Open to students aged 14 and up. All levels welcome."
+msgstr "Open voor beoefenaars vanaf 14 jaar. Alle niveaus welkom."
 
 #: front-page.php
 msgid "Our Instructors"
 msgstr "Onze instructeurs"
 
 #: front-page.php
-msgid "Our Mission"
-msgstr "Onze missie"
+msgid ""
+"Over 50 years of martial arts experience. Direct student of Kenei Mabuni and "
+"Nakamoto Masahiro."
+msgstr ""
+"Meer dan 50 jaar ervaring in krijgskunsten. Directe leerling van Kenei "
+"Mabuni en Nakamoto Masahiro."
+
+#: template-parts/content.php
+msgid "Pages:"
+msgstr "Pagina's:"
+
+#: footer.php
+msgid "Part of Budo Club Berchem"
+msgstr "Onderdeel van Budo Club Berchem"
+
+#: front-page.php
+msgid ""
+"Preserving the authentic traditions of Okinawan martial arts in Brussels"
+msgstr ""
+"Het behoud van de authentieke tradities van Okinawaanse krijgskunsten in "
+"Brussel"
+
+#: functions.php
+msgid "Primary Menu"
+msgstr "Hoofdmenu"
+
+#: front-page.php
+msgid ""
+"Questions about training or want to arrange a visit? We would love to hear "
+"from you."
+msgstr "Vragen over training of een bezoek plannen? We horen graag van u."
+
+#: template-parts/content-none.php
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Klaar om uw eerste bericht te publiceren? <a href=\"%1$s\">Begin hier</a>."
+
+#: front-page.php
+msgid "Ryūkyū Kobudō"
+msgstr "Ryūkyū Kobudō"
+
+#: front-page.php
+msgid ""
+"Ryūkyū Kobudō is the traditional weapon art of Okinawa, practiced alongside "
+"karate. At Bunbukan, this discipline develops coordination, control, and "
+"body awareness through the study of classical weapon forms and their "
+"applications, in an authentic and traditional approach."
+msgstr ""
+"Ryūkyū Kobudō is de traditionele wapenkunst van Okinawa, naast karate "
+"beoefend. Bij Bunbukan ontwikkelt deze discipline coördinatie, controle en "
+"lichaamsbewustzijn door de studie van klassieke wapenvormen en hun "
+"toepassingen, in een authentieke en traditionele aanpak."
+
+#: footer.php
+msgid "Select language"
+msgstr "Taal kiezen"
 
 #: front-page.php
 msgid "Send Email"
-msgstr "Email verzenden"
+msgstr "E-mail verzenden"
 
 #: front-page.php
-msgid "The Dōjō"
-msgstr "Het Dōjō"
+msgid ""
+"Shitō-ryū is a traditional Okinawan karate style, known for the richness of "
+"its kata and the precision of its techniques. Rooted in both Shuri and Naha "
+"traditions, it offers a complete practice that combines technical rigor, "
+"fluid movement, and a deep understanding of martial principles."
+msgstr ""
+"Shitō-ryū is een traditionele Okinawaanse karatestijl, bekend om de rijkdom "
+"van zijn kata en de precisie van zijn technieken. Geworteld in zowel Shuri- "
+"als Naha-tradities, biedt het een complete beoefening die technische "
+"strengheid, vloeiende beweging en een diep begrip van martiale principes "
+"combineert."
+
+#: front-page.php
+msgid "Shitō-Ryū Karate"
+msgstr "Shitō-Ryū Karate"
+
+#: front-page.php
+msgid "Shitō-Ryū Karate logo"
+msgstr "Shitō-Ryū Karate logo"
+
+#: front-page.php
+msgid "SINCE 1977"
+msgstr "SINDS 1977"
+
+#: front-page.php
+msgid "Since 1979"
+msgstr "Sinds 1979"
+
+#: front-page.php
+msgid "Since 2001"
+msgstr "Sinds 2001"
+
+#: header.php
+msgid "Skip to content"
+msgstr "Ga naar inhoud"
+
+#: template-parts/content-none.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Er is niets gevonden dat overeenkomt met uw zoekopdracht. Probeer het "
+"opnieuw met andere zoekwoorden."
+
+#: functions.php
+msgid "Submit"
+msgstr "Verzenden"
+
+#: front-page.php
+msgid ""
+"Technical depth and character development. Respect for tradition while "
+"fostering personal growth through the path of martial arts."
+msgstr ""
+"Technische diepgang en karakterontwikkeling. Respect voor traditie met "
+"ruimte voor persoonlijke groei via de weg van de krijgskunsten."
+
+#: front-page.php
+msgid "THE WAY"
+msgstr "DE WEG"
+
+#: footer.php
+msgid "Traditional Okinawan Martial Arts in Brussels"
+msgstr "Traditionele Okinawaanse krijgskunsten in Brussel"
+
+#: front-page.php
+msgid "Training Schedule"
+msgstr "Trainingsschema"
+
+#: front-page.php
+msgid "Under Nakamoto Masahiro"
+msgstr "Onder Nakamoto Masahiro"
+
+#: front-page.php
+msgid "View Map"
+msgstr "Kaart bekijken"
+
+#: template-parts/cookie-consent.php
+msgid ""
+"We use cookies to enhance your browsing experience and remember your "
+"language preference. By clicking \"Accept\", you consent to our use of "
+"cookies."
+msgstr ""
+"We gebruiken cookies om uw browse-ervaring te verbeteren en uw taalvoorkeur "
+"te onthouden. Door op \"Accepteren\" te klikken, stemt u in met ons gebruik "
+"van cookies."
+
+#: front-page.php
+msgid "Wednesday"
+msgstr "Woensdag"
+
+#: front-page.php
+msgid "Years Teaching"
+msgstr "Jaren lesgeven"
+
+#: front-page.php
+msgid "You can choose to practice only one of the two disciplines."
+msgstr "U kunt ervoor kiezen slechts één van de twee disciplines te beoefenen."

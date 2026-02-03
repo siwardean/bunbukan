@@ -1,73 +1,356 @@
+# Japanese (Japan) translation for Bunbukan Brussels theme.
 msgid ""
 msgstr ""
-"Project-Id-Version: Bunbukan 1.0.0\n"
+"Project-Id-Version: Bunbukan Brussels 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-24 12:00+0100\n"
-"PO-Revision-Date: 2026-01-27 13:00+0000\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2026-01-27 12:00+0000\n"
+"PO-Revision-Date: 2026-02-03 20:45+0000\n"
+"Last-Translator: Alain <alain@example.com>\n"
 "Language-Team: Japanese (Japan)\n"
 "Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Poedit-KeywordsList: __;esc_html__;esc_attr__;esc_html_e;esc_attr_e\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Domain: bunbukan\n"
 "Plural-Forms: nplurals=1; plural=0;"
+
+#: front-page.php
+msgid "2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor"
+msgstr "糸東流空手弐段・古武道黒帯・技術指導"
+
+#: front-page.php
+msgid "2nd Dan Shitō-Ryū, Technical Instructor (Karate)"
+msgstr "糸東流空手弐段・技術指導（空手）"
+
+#: front-page.php
+msgid "6th Dan Shitō-Ryū (Shihan), Chief Instructor"
+msgstr "糸東流空手六段（師範）・首席指導者"
+
+#: footer.php
+msgid "About"
+msgstr "について"
 
 #: front-page.php
 msgid "About Bunbukan Brussels"
 msgstr "ブリュッセル文武館について"
 
+#: template-parts/cookie-consent.php
+msgid "Accept"
+msgstr "同意"
+
+#: template-parts/cookie-consent.php
+msgid "Accept cookies"
+msgstr "Cookieを受け入れる"
+
 #: front-page.php
 msgid "Affiliations"
 msgstr "所属団体"
+
+#: footer.php
+msgid "All rights reserved."
+msgstr "All rights reserved."
+
+#: front-page.php
+msgid ""
+"As part of Budo Club Berchem, we preserve and transmit traditional martial "
+"arts taught at the Bunbukan Honbu Dōjō, while also continuing the Shitō-ryū "
+"karate lineage passed down by Kenei Mabuni."
+msgstr "武道クラブ・ベルケムの一員として、文武館本部道場で教える伝統武術を守り伝え、摩文仁賢栄先生から受け継いだ糸東流空手の系譜を継承しています。"
+
+#: front-page.php
+msgid ""
+"Assists in both Karate and Kobudō. Special focus on Okinawan weapons "
+"training."
+msgstr "空手・古武道の両方を補佐。沖縄武器術に特に注力。"
+
+#: front-page.php
+msgid ""
+"Assists in Karate instruction. Focused on precise technique and kata "
+"understanding."
+msgstr "空手指導を補佐。正確な技術と型の理解に重点を置く。"
+
+#: front-page.php
+msgid "Authentic"
+msgstr "正統"
 
 #: front-page.php
 msgid "Begin Your Journey"
 msgstr "あなたの旅を始める"
 
-#: front-page.php
-msgid "Budo Club Berchem logo"
-msgstr "武道クラブ・ベルケムロゴ"
+#: footer.php
+msgid "Bunbukan Brussels"
+msgstr "ブリュッセル文武館"
 
 #: front-page.php
-msgid "Contact Us"
+msgid "Bunbukan Brussels heritage"
+msgstr "ブリュッセル文武館の伝統"
+
+#: front-page.php
+msgid "Bunbukan logo"
+msgstr "文武館ロゴ"
+
+#: footer.php
+msgid "Contact"
+msgstr "お問い合わせ"
+
+#: template-parts/cookie-consent.php
+msgid "Cookie Consent"
+msgstr "Cookie同意"
+
+#: template-parts/cookie-consent.php
+msgid "Decline"
+msgstr "拒否"
+
+#: template-parts/cookie-consent.php
+msgid "Decline cookies"
+msgstr "Cookieを拒否"
+
+#: front-page.php
+msgid "Direct lineage from Kenei Mabuni"
+msgstr "摩文仁賢栄先生直系"
+
+#: footer.php
+msgid "Disciplines"
+msgstr "武道"
+
+#: front-page.php
+msgid "Experienced Instructors"
+msgstr "経験豊富な指導者"
+
+#: footer.php
+msgid "Facebook"
+msgstr "Facebook"
+
+#: footer.php
+msgid "Follow Us"
+msgstr "フォロー"
+
+#: functions.php
+msgid "Footer Menu"
+msgstr "フッターメニュー"
+
+#: front-page.php
+msgid "Friday"
+msgstr "金曜日"
+
+#: front-page.php
+msgid "Get in Touch"
 msgstr "お問い合わせ"
 
 #: front-page.php
-msgid "Interested in Training?"
-msgstr "練習に興味がありますか？"
+msgid "Heritage"
+msgstr "伝統"
+
+#: footer.php
+msgid "Home"
+msgstr "ホーム"
+
+#: footer.php
+msgid "Instagram"
+msgstr "Instagram"
+
+#: footer.php
+msgid "Instructors"
+msgstr "指導者"
+
+#: template-parts/content-none.php
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "お探しの内容が見つかりません。検索をお試しください。"
 
 #: front-page.php
-msgid "Join a Class"
-msgstr "クラスに参加する"
+msgid "Karate"
+msgstr "空手"
 
 #: front-page.php
 msgid "Karate & Kobudō"
 msgstr "空手道と古武道"
 
+#: front-page.php
+msgid ""
+"Karate and kobudō are two sides of the same coin. To understand one, you "
+"must practice the other."
+msgstr "空手と古武道は表裏一体。一方を理解するには、もう一方を稽古する必要があります。"
+
+#: front-page.php
+msgid "Karate training at makiwara"
+msgstr "巻藁での空手稽古"
+
+#: front-page.php
+msgid "Kobudō training at makiwara"
+msgstr "巻藁での古武道稽古"
+
 #: header.php
 msgid "Language switcher"
 msgstr "言語切り替え"
 
+#: footer.php
+msgid "Location"
+msgstr "所在地"
+
 #: front-page.php
-msgid "Our Heritage"
-msgstr "私たちの伝統"
+msgid "Mission"
+msgstr "使命"
+
+#: front-page.php
+msgid ""
+"New members are always welcome. Come observe a class or join us for a free "
+"trial session."
+msgstr "新規会員はいつでも歓迎です。見学または無料体験にご参加ください。"
+
+#: template-parts/content-none.php
+msgid "Nothing Found"
+msgstr "見つかりませんでした"
+
+#: front-page.php
+msgid "Open to students aged 14 and up. All levels welcome."
+msgstr "14歳以上対象。初心者から上級者まで歓迎。"
 
 #: front-page.php
 msgid "Our Instructors"
-msgstr "私たちの指導者"
+msgstr "指導者紹介"
 
 #: front-page.php
-msgid "Our Mission"
-msgstr "私たちの使命"
+msgid ""
+"Over 50 years of martial arts experience. Direct student of Kenei Mabuni and "
+"Nakamoto Masahiro."
+msgstr "50年以上の武道経験。摩文仁賢栄・仲本政博両先生の直門。"
+
+#: template-parts/content.php
+msgid "Pages:"
+msgstr "ページ："
+
+#: footer.php
+msgid "Part of Budo Club Berchem"
+msgstr "武道クラブ・ベルケム所属"
+
+#: front-page.php
+msgid ""
+"Preserving the authentic traditions of Okinawan martial arts in Brussels"
+msgstr "ブリュッセルで沖縄伝統武術の真髄を守り伝える"
+
+#: functions.php
+msgid "Primary Menu"
+msgstr "メインメニュー"
+
+#: front-page.php
+msgid ""
+"Questions about training or want to arrange a visit? We would love to hear "
+"from you."
+msgstr "稽古についてのご質問や見学のご希望は、お気軽にご連絡ください。"
+
+#: template-parts/content-none.php
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "最初の投稿を公開する準備はできましたか？<a href=\"%1$s\">ここから始める</a>。"
+
+#: front-page.php
+msgid "Ryūkyū Kobudō"
+msgstr "琉球古武道"
+
+#: front-page.php
+msgid ""
+"Ryūkyū Kobudō is the traditional weapon art of Okinawa, practiced alongside "
+"karate. At Bunbukan, this discipline develops coordination, control, and "
+"body awareness through the study of classical weapon forms and their "
+"applications, in an authentic and traditional approach."
+msgstr ""
+"琉球古武道は沖縄の伝統武器術で、空手と並んで稽古されます。文武館では、古典的な武器の型とその応用を正統・伝統的なアプローチで学び、協調性、コントロール、身体感覚を養います。"
+
+#: footer.php
+msgid "Select language"
+msgstr "言語を選択"
 
 #: front-page.php
 msgid "Send Email"
 msgstr "メールを送信"
 
 #: front-page.php
-msgid "The Dōjō"
-msgstr "道場"
+msgid ""
+"Shitō-ryū is a traditional Okinawan karate style, known for the richness of "
+"its kata and the precision of its techniques. Rooted in both Shuri and Naha "
+"traditions, it offers a complete practice that combines technical rigor, "
+"fluid movement, and a deep understanding of martial principles."
+msgstr ""
+"糸東流は沖縄伝統の空手流派で、型の豊かさと技術の精密さで知られています。首里・那覇の両伝統に根ざし、技術の厳密さ、流れるような動き、武術原理の深い理解を兼ね備えた総合的な稽古を提供します。"
+
+#: front-page.php
+msgid "Shitō-Ryū Karate"
+msgstr "糸東流空手"
+
+#: front-page.php
+msgid "Shitō-Ryū Karate logo"
+msgstr "糸東流空手ロゴ"
+
+#: front-page.php
+msgid "SINCE 1977"
+msgstr "1977年より"
+
+#: front-page.php
+msgid "Since 1979"
+msgstr "1979年より"
+
+#: front-page.php
+msgid "Since 2001"
+msgstr "2001年より"
+
+#: header.php
+msgid "Skip to content"
+msgstr "コンテンツへスキップ"
+
+#: template-parts/content-none.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "検索条件に一致するものが見つかりませんでした。別のキーワードでお試しください。"
+
+#: functions.php
+msgid "Submit"
+msgstr "送信"
+
+#: front-page.php
+msgid ""
+"Technical depth and character development. Respect for tradition while "
+"fostering personal growth through the path of martial arts."
+msgstr "技術の深さと人格の育成。伝統を尊重しつつ、武道の道を通じて自己成長を促します。"
+
+#: front-page.php
+msgid "THE WAY"
+msgstr "道"
+
+#: footer.php
+msgid "Traditional Okinawan Martial Arts in Brussels"
+msgstr "ブリュッセルの沖縄伝統武術"
+
+#: front-page.php
+msgid "Training Schedule"
+msgstr "稽古スケジュール"
+
+#: front-page.php
+msgid "Under Nakamoto Masahiro"
+msgstr "仲本政博先生に師事"
+
+#: front-page.php
+msgid "View Map"
+msgstr "地図を見る"
+
+#: template-parts/cookie-consent.php
+msgid ""
+"We use cookies to enhance your browsing experience and remember your "
+"language preference. By clicking \"Accept\", you consent to our use of "
+"cookies."
+msgstr "閲覧体験の向上と言語設定の記憶のためCookieを使用しています。「同意」をクリックするとCookieの使用に同意したことになります。"
+
+#: front-page.php
+msgid "Wednesday"
+msgstr "水曜日"
+
+#: front-page.php
+msgid "Years Teaching"
+msgstr "指導年数"
+
+#: front-page.php
+msgid "You can choose to practice only one of the two disciplines."
+msgstr "空手と古武道のどちらか一方だけの稽古も可能です。"

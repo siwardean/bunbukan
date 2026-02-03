@@ -1,328 +1,328 @@
-# Copyright (C) 2026 Bunbukan Brussels
-# This file is distributed under the same license as the Bunbukan Brussels theme.
+# French (France) translation for Bunbukan Brussels theme.
 msgid ""
 msgstr ""
 "Project-Id-Version: Bunbukan Brussels 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-27 12:00+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: \n"
+"PO-Revision-Date: 2026-01-27 14:00+0000\n"
+"Last-Translator: Alain <alain@example.com>\n"
+"Language-Team: French (France)\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Bunbukan theme\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Domain: bunbukan\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #: header.php
 msgid "Skip to content"
-msgstr ""
+msgstr "Aller au contenu"
 
 #: header.php
 msgid "Language switcher"
-msgstr ""
+msgstr "Sélecteur de langue"
 
 #: header.php
 msgid "Primary Menu"
-msgstr ""
+msgstr "Menu principal"
 
 #: front-page.php
 msgid "Bunbukan logo"
-msgstr ""
+msgstr "Logo Bunbukan"
 
 #: front-page.php
 msgid "Shitō-Ryū Karate logo"
-msgstr ""
+msgstr "Logo Shitō-Ryū Karate"
 
 #: front-page.php
 msgid "Preserving the authentic traditions of Okinawan martial arts in Brussels"
-msgstr ""
+msgstr "Préserver les traditions authentiques des arts martiaux okinawais à Bruxelles"
 
 #: front-page.php
 msgid "Shitō-Ryū Karate"
-msgstr ""
+msgstr "Shitō-Ryū Karate"
 
 #: front-page.php
 msgid "Direct lineage from Kenei Mabuni"
-msgstr ""
+msgstr "Lignée directe de Kenei Mabuni"
 
 #: front-page.php
 msgid "Ryūkyū Kobudō"
-msgstr ""
+msgstr "Ryūkyū Kobudō"
 
 #: front-page.php
 msgid "Under Nakamoto Masahiro"
-msgstr ""
+msgstr "Sous Nakamoto Masahiro"
 
 #: front-page.php
 msgid "Begin Your Journey"
-msgstr ""
+msgstr "Commencez votre voyage"
 
 #: front-page.php
 msgid "About Bunbukan Brussels"
-msgstr ""
+msgstr "À propos du Bunbukan Brussels"
 
 #: front-page.php
 msgid "Bunbukan Brussels heritage"
-msgstr ""
+msgstr "Héritage Bunbukan Brussels"
 
 #: front-page.php
 msgid "Heritage"
-msgstr ""
+msgstr "Héritage"
 
 #: front-page.php
 msgid "SINCE 1977"
-msgstr ""
+msgstr "DEPUIS 1977"
 
 #: front-page.php
 msgid "As part of Budo Club Berchem, we preserve and transmit traditional martial arts taught at the Bunbukan Honbu Dōjō, while also continuing the Shitō-ryū karate lineage passed down by Kenei Mabuni."
-msgstr ""
+msgstr "Au sein du Budo Club Berchem, nous préservons et transmettons les arts martiaux traditionnels enseignés au Bunbukan Honbu Dōjō, tout en perpétuant la lignée du karaté Shitō-ryū transmise par Kenei Mabuni."
 
 #: front-page.php
 msgid "Mission"
-msgstr ""
+msgstr "Mission"
 
 #: front-page.php
 msgid "THE WAY"
-msgstr ""
+msgstr "LA VOIE"
 
 #: front-page.php
 msgid "Technical depth and character development. Respect for tradition while fostering personal growth through the path of martial arts."
-msgstr ""
+msgstr "Profondeur technique et développement du caractère. Respect de la tradition tout en favorisant l'épanouissement personnel par la voie des arts martiaux."
 
 #: front-page.php
 msgid "Years Teaching"
-msgstr ""
+msgstr "Années d'enseignement"
 
 #: front-page.php
 msgid "Experienced Instructors"
-msgstr ""
+msgstr "Instructeurs expérimentés"
 
 #: front-page.php
 msgid "Authentic"
-msgstr ""
+msgstr "Authentique"
 
 #: front-page.php
 msgid "Karate & Kobudō"
-msgstr ""
+msgstr "Karaté & Kobudō"
 
 #: front-page.php
 msgid "Karate and kobudō are two sides of the same coin. To understand one, you must practice the other."
-msgstr ""
+msgstr "Le karaté et le kobudō sont les deux faces d'une même médaille. Pour comprendre l'un, il faut pratiquer l'autre."
 
 #: front-page.php
 msgid "Karate training at makiwara"
-msgstr ""
+msgstr "Entraînement de karaté au makiwara"
 
 #: front-page.php
 msgid "Since 1979"
-msgstr ""
+msgstr "Depuis 1979"
 
 #: front-page.php
 msgid "Shitō-ryū is a traditional Okinawan karate style, known for the richness of its kata and the precision of its techniques. Rooted in both Shuri and Naha traditions, it offers a complete practice that combines technical rigor, fluid movement, and a deep understanding of martial principles."
-msgstr ""
+msgstr "Le Shitō-ryū est un style de karaté okinawais traditionnel, reconnu pour la richesse de ses kata et la précision de ses techniques. Enraciné dans les traditions de Shuri et Naha, il offre une pratique complète alliant rigueur technique, fluidité du mouvement et compréhension approfondie des principes martiaux."
 
 #: front-page.php
 msgid "Since 2001"
-msgstr ""
+msgstr "Depuis 2001"
 
 #: front-page.php
 msgid "Ryūkyū Kobudō is the traditional weapon art of Okinawa, practiced alongside karate. At Bunbukan, this discipline develops coordination, control, and body awareness through the study of classical weapon forms and their applications, in an authentic and traditional approach."
-msgstr ""
+msgstr "Le Ryūkyū Kobudō est l'art traditionnel des armes d'Okinawa, pratiqué aux côtés du karaté. Au Bunbukan, cette discipline développe la coordination, le contrôle et la conscience du corps par l'étude des formes classiques aux armes et de leurs applications, dans une approche authentique et traditionnelle."
 
 #: front-page.php
 msgid "Kobudō training at makiwara"
-msgstr ""
+msgstr "Entraînement de kobudō au makiwara"
 
 #: front-page.php
 msgid "Our Instructors"
-msgstr ""
+msgstr "Nos instructeurs"
 
 #: front-page.php
 msgid "2nd Dan Shitō-Ryū, Technical Instructor (Karate)"
-msgstr ""
+msgstr "2e Dan Shitō-Ryū, instructeur technique (Karaté)"
 
 #: front-page.php
 msgid "Assists in Karate instruction. Focused on precise technique and kata understanding."
-msgstr ""
+msgstr "Assiste à l'enseignement du karaté. Axé sur la technique précise et la compréhension des kata."
 
 #: front-page.php
 msgid "6th Dan Shitō-Ryū (Shihan), Chief Instructor"
-msgstr ""
+msgstr "6e Dan Shitō-Ryū (Shihan), instructeur en chef"
 
 #: front-page.php
 msgid "Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro."
-msgstr ""
+msgstr "Plus de 50 ans d'expérience en arts martiaux. Élève direct de Kenei Mabuni et Nakamoto Masahiro."
 
 #: front-page.php
 msgid "2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor"
-msgstr ""
+msgstr "2e Dan Shitō-Ryū, ceinture noire en Kobudō, instructeur technique"
 
 #: front-page.php
 msgid "Assists in both Karate and Kobudō. Special focus on Okinawan weapons training."
-msgstr ""
+msgstr "Assiste en karaté et en kobudō. Focus particulier sur l'entraînement aux armes okinawaises."
 
 #: front-page.php
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #: front-page.php
 msgid "New members are always welcome. Come observe a class or join us for a free trial session."
-msgstr ""
+msgstr "Les nouveaux membres sont toujours les bienvenus. Venez observer un cours ou rejoignez-nous pour une séance d'essai gratuite."
 
 #: front-page.php
 msgid "You can choose to practice only one of the two disciplines."
-msgstr ""
+msgstr "Vous pouvez choisir de ne pratiquer qu'une des deux disciplines."
 
 #: front-page.php
 msgid "Training Schedule"
-msgstr ""
+msgstr "Horaires des entraînements"
 
 #: front-page.php
 msgid "Wednesday"
-msgstr ""
+msgstr "Mercredi"
 
 #: front-page.php
 msgid "Karate"
-msgstr ""
+msgstr "Karaté"
 
 #: front-page.php
 msgid "Friday"
-msgstr ""
+msgstr "Vendredi"
 
 #: front-page.php
 msgid "Open to students aged 14 and up. All levels welcome."
-msgstr ""
+msgstr "Ouvert aux pratiquants à partir de 14 ans. Tous niveaux bienvenus."
 
 #: front-page.php
 msgid "Get in Touch"
-msgstr ""
+msgstr "Nous contacter"
 
 #: front-page.php
 msgid "Questions about training or want to arrange a visit? We would love to hear from you."
-msgstr ""
+msgstr "Des questions sur l'entraînement ou souhaitez organiser une visite ? Nous serions ravis de vous répondre."
 
 #: front-page.php
 msgid "Send Email"
-msgstr ""
+msgstr "Envoyer un e-mail"
 
 #: front-page.php
 msgid "View Map"
-msgstr ""
+msgstr "Voir la carte"
 
 #: front-page.php
 msgid "Affiliations"
-msgstr ""
+msgstr "Affiliations"
 
 #: footer.php
 msgid "Bunbukan Brussels"
-msgstr ""
+msgstr "Bunbukan Brussels"
 
 #: footer.php
 msgid "Traditional Okinawan Martial Arts in Brussels"
-msgstr ""
+msgstr "Arts martiaux okinawais traditionnels à Bruxelles"
 
 #: footer.php
 msgid "Select language"
-msgstr ""
+msgstr "Choisir la langue"
 
 #: footer.php
 msgid "Home"
-msgstr ""
+msgstr "Accueil"
 
 #: footer.php
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: footer.php
 msgid "Disciplines"
-msgstr ""
+msgstr "Disciplines"
 
 #: footer.php
 msgid "Instructors"
-msgstr ""
+msgstr "Instructeurs"
 
 #: footer.php
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #: footer.php
 msgid "Location"
-msgstr ""
+msgstr "Adresse"
 
 #: footer.php
 msgid "Part of Budo Club Berchem"
-msgstr ""
+msgstr "Membre du Budo Club Berchem"
 
 #: footer.php
 msgid "Follow Us"
-msgstr ""
+msgstr "Suivez-nous"
 
 #: footer.php
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: footer.php
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
 #: footer.php
 msgid "All rights reserved."
-msgstr ""
+msgstr "Tous droits réservés."
 
 #: functions.php
 msgid "Primary Menu"
-msgstr ""
+msgstr "Menu principal"
 
 #: functions.php
 msgid "Footer Menu"
-msgstr ""
+msgstr "Menu du pied de page"
 
 #: functions.php
 msgid "Submit"
-msgstr ""
+msgstr "Envoyer"
 
 #: template-parts/cookie-consent.php
 msgid "Cookie Consent"
-msgstr ""
+msgstr "Consentement aux cookies"
 
 #: template-parts/cookie-consent.php
 msgid "We use cookies to enhance your browsing experience and remember your language preference. By clicking \"Accept\", you consent to our use of cookies."
-msgstr ""
+msgstr "Nous utilisons des cookies pour améliorer votre navigation et mémoriser votre langue. En cliquant sur « Accepter », vous consentez à notre utilisation des cookies."
 
 #: template-parts/cookie-consent.php
 msgid "Accept cookies"
-msgstr ""
+msgstr "Accepter les cookies"
 
 #: template-parts/cookie-consent.php
 msgid "Accept"
-msgstr ""
+msgstr "Accepter"
 
 #: template-parts/cookie-consent.php
 msgid "Decline cookies"
-msgstr ""
+msgstr "Refuser les cookies"
 
 #: template-parts/cookie-consent.php
 msgid "Decline"
-msgstr ""
+msgstr "Refuser"
 
 #: template-parts/content.php
 msgid "Pages:"
-msgstr ""
+msgstr "Pages :"
 
 #: template-parts/content-none.php
 msgid "Nothing Found"
-msgstr ""
+msgstr "Rien trouvé"
 
 #: template-parts/content-none.php
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
+msgstr "Prêt à publier votre premier article ? <a href=\"%1$s\">Commencez ici</a>."
 
 #: template-parts/content-none.php
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
+msgstr "Aucun résultat ne correspond à votre recherche. Veuillez réessayer avec d'autres mots-clés."
 
 #: template-parts/content-none.php
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
+msgstr "Nous ne trouvons pas ce que vous cherchez. Une recherche peut vous aider."

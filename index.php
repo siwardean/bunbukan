@@ -5,6 +5,12 @@
  * @package Bunbukan
  */
 
+// When home URL shows no content (no static front page set, or Polylang returns no page), show front page template.
+if ( is_home() && ! have_posts() ) {
+	locate_template( 'front-page.php', true );
+	return;
+}
+
 get_header();
 ?>
 

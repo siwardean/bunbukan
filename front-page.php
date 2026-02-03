@@ -455,7 +455,7 @@ if (!function_exists('bunbukan_render_divider')) {
 					<div class="bb-contact__actions">
 						<a href="mailto:info@bunbukan.eu"
 							class="bb-btn bb-btn--primary"><?php echo esc_html__('Send Email', 'bunbukan'); ?></a>
-						<a href="https://www.google.com/maps/search/?api=1&query=Rue+des+Chalets+30,+1030+Schaerbeek"
+						<a href="https://www.google.com/maps/search/?api=1&query=Rue+des+Chalets+30,+1082+Berchem-Sainte-Agathe"
 							target="_blank" rel="noopener noreferrer"
 							class="bb-btn bb-btn--outline"><?php echo esc_html__('View Map', 'bunbukan'); ?></a>
 					</div>

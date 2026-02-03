@@ -100,7 +100,7 @@
 				<p><?php echo esc_html__('Bunbukan Brussels', 'bunbukan'); ?></p>
 				<p><?php echo esc_html__('Part of Budo Club Berchem', 'bunbukan'); ?></p>
 				<p>Rue des Chalets 30</p>
-				<p>1030 Schaerbeek, Belgium</p>
+				<p>1082 Berchem-Sainte-Agathe, Belgium</p>
 				
 				<div class="site-footer__social">
 					<p><strong><?php echo esc_html__('Follow Us', 'bunbukan'); ?></strong></p>

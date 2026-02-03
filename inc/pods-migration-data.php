@@ -283,7 +283,7 @@ function bunbukan_prefill_homepage_fields($page_id)
 		$contact_fields['contact_email_button'] = 'Send Email';
 	}
 	if (!$pod->field('contact_address')) {
-		$contact_fields['contact_address'] = 'Rue des Chalets 30, 1030 Schaerbeek';
+		$contact_fields['contact_address'] = 'Rue des Chalets 30, 1082 Berchem-Sainte-Agathe';
 	}
 	if (!$pod->field('contact_map_button')) {
 		$contact_fields['contact_map_button'] = 'View Map';

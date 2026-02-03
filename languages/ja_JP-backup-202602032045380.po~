@@ -1,328 +1,328 @@
-# Copyright (C) 2026 Bunbukan Brussels
-# This file is distributed under the same license as the Bunbukan Brussels theme.
+# Japanese (Japan) translation for Bunbukan Brussels theme.
 msgid ""
 msgstr ""
 "Project-Id-Version: Bunbukan Brussels 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-27 12:00+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: \n"
+"PO-Revision-Date: 2026-01-27 14:00+0000\n"
+"Last-Translator: Alain <alain@example.com>\n"
+"Language-Team: Japanese (Japan)\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Bunbukan theme\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Domain: bunbukan\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: header.php
 msgid "Skip to content"
-msgstr ""
+msgstr "コンテンツへスキップ"
 
 #: header.php
 msgid "Language switcher"
-msgstr ""
+msgstr "言語切り替え"
 
 #: header.php
 msgid "Primary Menu"
-msgstr ""
+msgstr "メインメニュー"
 
 #: front-page.php
 msgid "Bunbukan logo"
-msgstr ""
+msgstr "文武館ロゴ"
 
 #: front-page.php
 msgid "Shitō-Ryū Karate logo"
-msgstr ""
+msgstr "糸東流空手ロゴ"
 
 #: front-page.php
 msgid "Preserving the authentic traditions of Okinawan martial arts in Brussels"
-msgstr ""
+msgstr "ブリュッセルで沖縄伝統武術の真髄を守り伝える"
 
 #: front-page.php
 msgid "Shitō-Ryū Karate"
-msgstr ""
+msgstr "糸東流空手"
 
 #: front-page.php
 msgid "Direct lineage from Kenei Mabuni"
-msgstr ""
+msgstr "摩文仁賢栄先生直系"
 
 #: front-page.php
 msgid "Ryūkyū Kobudō"
-msgstr ""
+msgstr "琉球古武道"
 
 #: front-page.php
 msgid "Under Nakamoto Masahiro"
-msgstr ""
+msgstr "仲本政博先生に師事"
 
 #: front-page.php
 msgid "Begin Your Journey"
-msgstr ""
+msgstr "あなたの旅を始める"
 
 #: front-page.php
 msgid "About Bunbukan Brussels"
-msgstr ""
+msgstr "ブリュッセル文武館について"
 
 #: front-page.php
 msgid "Bunbukan Brussels heritage"
-msgstr ""
+msgstr "ブリュッセル文武館の伝統"
 
 #: front-page.php
 msgid "Heritage"
-msgstr ""
+msgstr "伝統"
 
 #: front-page.php
 msgid "SINCE 1977"
-msgstr ""
+msgstr "1977年より"
 
 #: front-page.php
 msgid "As part of Budo Club Berchem, we preserve and transmit traditional martial arts taught at the Bunbukan Honbu Dōjō, while also continuing the Shitō-ryū karate lineage passed down by Kenei Mabuni."
-msgstr ""
+msgstr "武道クラブ・ベルケムの一員として、文武館本部道場で教える伝統武術を守り伝え、摩文仁賢栄先生から受け継いだ糸東流空手の系譜を継承しています。"
 
 #: front-page.php
 msgid "Mission"
-msgstr ""
+msgstr "使命"
 
 #: front-page.php
 msgid "THE WAY"
-msgstr ""
+msgstr "道"
 
 #: front-page.php
 msgid "Technical depth and character development. Respect for tradition while fostering personal growth through the path of martial arts."
-msgstr ""
+msgstr "技術の深さと人格の育成。伝統を尊重しつつ、武道の道を通じて自己成長を促します。"
 
 #: front-page.php
 msgid "Years Teaching"
-msgstr ""
+msgstr "指導年数"
 
 #: front-page.php
 msgid "Experienced Instructors"
-msgstr ""
+msgstr "経験豊富な指導者"
 
 #: front-page.php
 msgid "Authentic"
-msgstr ""
+msgstr "正統"
 
 #: front-page.php
 msgid "Karate & Kobudō"
-msgstr ""
+msgstr "空手道と古武道"
 
 #: front-page.php
 msgid "Karate and kobudō are two sides of the same coin. To understand one, you must practice the other."
-msgstr ""
+msgstr "空手と古武道は表裏一体。一方を理解するには、もう一方を稽古する必要があります。"
 
 #: front-page.php
 msgid "Karate training at makiwara"
-msgstr ""
+msgstr "巻藁での空手稽古"
 
 #: front-page.php
 msgid "Since 1979"
-msgstr ""
+msgstr "1979年より"
 
 #: front-page.php
 msgid "Shitō-ryū is a traditional Okinawan karate style, known for the richness of its kata and the precision of its techniques. Rooted in both Shuri and Naha traditions, it offers a complete practice that combines technical rigor, fluid movement, and a deep understanding of martial principles."
-msgstr ""
+msgstr "糸東流は沖縄伝統の空手流派で、型の豊かさと技術の精密さで知られています。首里・那覇の両伝統に根ざし、技術の厳密さ、流れるような動き、武術原理の深い理解を兼ね備えた総合的な稽古を提供します。"
 
 #: front-page.php
 msgid "Since 2001"
-msgstr ""
+msgstr "2001年より"
 
 #: front-page.php
 msgid "Ryūkyū Kobudō is the traditional weapon art of Okinawa, practiced alongside karate. At Bunbukan, this discipline develops coordination, control, and body awareness through the study of classical weapon forms and their applications, in an authentic and traditional approach."
-msgstr ""
+msgstr "琉球古武道は沖縄の伝統武器術で、空手と並んで稽古されます。文武館では、古典的な武器の型とその応用を正統・伝統的なアプローチで学び、協調性、コントロール、身体感覚を養います。"
 
 #: front-page.php
 msgid "Kobudō training at makiwara"
-msgstr ""
+msgstr "巻藁での古武道稽古"
 
 #: front-page.php
 msgid "Our Instructors"
-msgstr ""
+msgstr "指導者紹介"
 
 #: front-page.php
 msgid "2nd Dan Shitō-Ryū, Technical Instructor (Karate)"
-msgstr ""
+msgstr "糸東流空手弐段・技術指導（空手）"
 
 #: front-page.php
 msgid "Assists in Karate instruction. Focused on precise technique and kata understanding."
-msgstr ""
+msgstr "空手指導を補佐。正確な技術と型の理解に重点を置く。"
 
 #: front-page.php
 msgid "6th Dan Shitō-Ryū (Shihan), Chief Instructor"
-msgstr ""
+msgstr "糸東流空手六段（師範）・首席指導者"
 
 #: front-page.php
 msgid "Over 50 years of martial arts experience. Direct student of Kenei Mabuni and Nakamoto Masahiro."
-msgstr ""
+msgstr "50年以上の武道経験。摩文仁賢栄・仲本政博両先生の直門。"
 
 #: front-page.php
 msgid "2nd Dan Shitō-Ryū, Black Belt in Kobudō, Technical Instructor"
-msgstr ""
+msgstr "糸東流空手弐段・古武道黒帯・技術指導"
 
 #: front-page.php
 msgid "Assists in both Karate and Kobudō. Special focus on Okinawan weapons training."
-msgstr ""
+msgstr "空手・古武道の両方を補佐。沖縄武器術に特に注力。"
 
 #: front-page.php
 msgid "Contact"
-msgstr ""
+msgstr "お問い合わせ"
 
 #: front-page.php
 msgid "New members are always welcome. Come observe a class or join us for a free trial session."
-msgstr ""
+msgstr "新規会員はいつでも歓迎です。見学または無料体験にご参加ください。"
 
 #: front-page.php
 msgid "You can choose to practice only one of the two disciplines."
-msgstr ""
+msgstr "空手と古武道のどちらか一方だけの稽古も可能です。"
 
 #: front-page.php
 msgid "Training Schedule"
-msgstr ""
+msgstr "稽古スケジュール"
 
 #: front-page.php
 msgid "Wednesday"
-msgstr ""
+msgstr "水曜日"
 
 #: front-page.php
 msgid "Karate"
-msgstr ""
+msgstr "空手"
 
 #: front-page.php
 msgid "Friday"
-msgstr ""
+msgstr "金曜日"
 
 #: front-page.php
 msgid "Open to students aged 14 and up. All levels welcome."
-msgstr ""
+msgstr "14歳以上対象。初心者から上級者まで歓迎。"
 
 #: front-page.php
 msgid "Get in Touch"
-msgstr ""
+msgstr "お問い合わせ"
 
 #: front-page.php
 msgid "Questions about training or want to arrange a visit? We would love to hear from you."
-msgstr ""
+msgstr "稽古についてのご質問や見学のご希望は、お気軽にご連絡ください。"
 
 #: front-page.php
 msgid "Send Email"
-msgstr ""
+msgstr "メールを送信"
 
 #: front-page.php
 msgid "View Map"
-msgstr ""
+msgstr "地図を見る"
 
 #: front-page.php
 msgid "Affiliations"
-msgstr ""
+msgstr "所属団体"
 
 #: footer.php
 msgid "Bunbukan Brussels"
-msgstr ""
+msgstr "ブリュッセル文武館"
 
 #: footer.php
 msgid "Traditional Okinawan Martial Arts in Brussels"
-msgstr ""
+msgstr "ブリュッセルの沖縄伝統武術"
 
 #: footer.php
 msgid "Select language"
-msgstr ""
+msgstr "言語を選択"
 
 #: footer.php
 msgid "Home"
-msgstr ""
+msgstr "ホーム"
 
 #: footer.php
 msgid "About"
-msgstr ""
+msgstr "について"
 
 #: footer.php
 msgid "Disciplines"
-msgstr ""
+msgstr "武道"
 
 #: footer.php
 msgid "Instructors"
-msgstr ""
+msgstr "指導者"
 
 #: footer.php
 msgid "Contact"
-msgstr ""
+msgstr "お問い合わせ"
 
 #: footer.php
 msgid "Location"
-msgstr ""
+msgstr "所在地"
 
 #: footer.php
 msgid "Part of Budo Club Berchem"
-msgstr ""
+msgstr "武道クラブ・ベルケム所属"
 
 #: footer.php
 msgid "Follow Us"
-msgstr ""
+msgstr "フォロー"
 
 #: footer.php
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: footer.php
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
 #: footer.php
 msgid "All rights reserved."
-msgstr ""
+msgstr "All rights reserved."
 
 #: functions.php
 msgid "Primary Menu"
-msgstr ""
+msgstr "メインメニュー"
 
 #: functions.php
 msgid "Footer Menu"
-msgstr ""
+msgstr "フッターメニュー"
 
 #: functions.php
 msgid "Submit"
-msgstr ""
+msgstr "送信"
 
 #: template-parts/cookie-consent.php
 msgid "Cookie Consent"
-msgstr ""
+msgstr "Cookie同意"
 
 #: template-parts/cookie-consent.php
 msgid "We use cookies to enhance your browsing experience and remember your language preference. By clicking \"Accept\", you consent to our use of cookies."
-msgstr ""
+msgstr "閲覧体験の向上と言語設定の記憶のためCookieを使用しています。「同意」をクリックするとCookieの使用に同意したことになります。"
 
 #: template-parts/cookie-consent.php
 msgid "Accept cookies"
-msgstr ""
+msgstr "Cookieを受け入れる"
 
 #: template-parts/cookie-consent.php
 msgid "Accept"
-msgstr ""
+msgstr "同意"
 
 #: template-parts/cookie-consent.php
 msgid "Decline cookies"
-msgstr ""
+msgstr "Cookieを拒否"
 
 #: template-parts/cookie-consent.php
 msgid "Decline"
-msgstr ""
+msgstr "拒否"
 
 #: template-parts/content.php
 msgid "Pages:"
-msgstr ""
+msgstr "ページ："
 
 #: template-parts/content-none.php
 msgid "Nothing Found"
-msgstr ""
+msgstr "見つかりませんでした"
 
 #: template-parts/content-none.php
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
+msgstr "最初の投稿を公開する準備はできましたか？<a href=\"%1$s\">ここから始める</a>。"
 
 #: template-parts/content-none.php
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
+msgstr "検索条件に一致するものが見つかりませんでした。別のキーワードでお試しください。"
 
 #: template-parts/content-none.php
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
+msgstr "お探しの内容が見つかりません。検索をお試しください。"
