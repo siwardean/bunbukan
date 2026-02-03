@@ -306,14 +306,14 @@ function bunbukan_prefill_homepage_fields($page_id)
 		$affiliations_fields['affiliation_1_name'] = 'Budo Club Berchem Brussels';
 	}
 	if (!$pod->field('affiliation_1_url')) {
-		$affiliations_fields['affiliation_1_url'] = 'https://www.budoclubberchem.be/';
+		$affiliations_fields['affiliation_1_url'] = 'https://budo-club-berchem.be/';
 	}
 	// Affiliation 2
 	if (!$pod->field('affiliation_2_name')) {
 		$affiliations_fields['affiliation_2_name'] = 'Vlaamse Karate Associatie (VKA)';
 	}
 	if (!$pod->field('affiliation_2_url')) {
-		$affiliations_fields['affiliation_2_url'] = 'https://www.vka.be/';
+		$affiliations_fields['affiliation_2_url'] = 'https://vlaamse-karate-associatie.be/';
 	}
 	// Affiliation 3
 	if (!$pod->field('affiliation_3_name')) {
@@ -327,14 +327,14 @@ function bunbukan_prefill_homepage_fields($page_id)
 		$affiliations_fields['affiliation_4_name'] = 'Dento Shito-Ryu (Japan)';
 	}
 	if (!$pod->field('affiliation_4_url')) {
-		$affiliations_fields['affiliation_4_url'] = 'https://www.dento-shitoryu.jp/';
+		$affiliations_fields['affiliation_4_url'] = 'https://www.dento-shitoryu.org/en';
 	}
 	// Affiliation 5
 	if (!$pod->field('affiliation_5_name')) {
 		$affiliations_fields['affiliation_5_name'] = 'Ono-ha Itto-Ryu';
 	}
 	if (!$pod->field('affiliation_5_url')) {
-		$affiliations_fields['affiliation_5_url'] = 'https://www.ono-ha-ittoryu.be/';
+		$affiliations_fields['affiliation_5_url'] = 'https://www.onohaittoryu.be/';
 	}
 	// Affiliation 6
 	if (!$pod->field('affiliation_6_name')) {
@@ -348,7 +348,14 @@ function bunbukan_prefill_homepage_fields($page_id)
 		$affiliations_fields['affiliation_7_name'] = 'Sport Brussel';
 	}
 	if (!$pod->field('affiliation_7_url')) {
-		$affiliations_fields['affiliation_7_url'] = 'https://www.sport.brussels/';
+		$affiliations_fields['affiliation_7_url'] = 'https://www.vgc.be/';
+	}
+	// Affiliation 8
+	if (!$pod->field('affiliation_8_name')) {
+		$affiliations_fields['affiliation_8_name'] = 'Commune de Berchem-Sainte-Agathe';
+	}
+	if (!$pod->field('affiliation_8_url')) {
+		$affiliations_fields['affiliation_8_url'] = 'https://berchem.brussels/';
 	}
 
 	if (!empty($affiliations_fields)) {

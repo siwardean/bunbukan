@@ -479,12 +479,12 @@ if (!function_exists('bunbukan_render_divider')) {
 				array(
 					'name' => 'Budo Club Berchem Brussels',
 					'logo' => 'budo-club-berchem-ico-3.png',
-					'url' => 'https://www.budoclubberchem.be/',
+					'url' => 'https://budo-club-berchem.be/',
 				),
 				array(
 					'name' => 'Vlaamse Karate Associatie (VKA)',
 					'logo' => 'vka-ico.png',
-					'url' => 'https://www.vka.be/',
+					'url' => 'https://vlaamse-karate-associatie.be/',
 				),
 				array(
 					'name' => 'Shitokai Belgium',
@@ -494,12 +494,12 @@ if (!function_exists('bunbukan_render_divider')) {
 				array(
 					'name' => 'Dento Shito-Ryu (Japan)',
 					'logo' => 'dento-shito-ryu-ico-8.png',
-					'url' => 'https://www.dento-shitoryu.jp/',
+					'url' => 'https://www.dento-shitoryu.org/en',
 				),
 				array(
 					'name' => 'Ono-ha Itto-Ryu',
 					'logo' => 'ono-ha-itto-ryu-ico-7.png',
-					'url' => 'https://www.ono-ha-ittoryu.be/',
+					'url' => 'https://www.onohaittoryu.be/',
 				),
 				array(
 					'name' => 'Hontai Yoshin Ryu',
@@ -509,7 +509,12 @@ if (!function_exists('bunbukan_render_divider')) {
 				array(
 					'name' => 'Sport Brussel',
 					'logo' => 'sport-brussel-ico-4.png',
-					'url' => 'https://www.sport.brussels/',
+					'url' => 'https://www.vgc.be/',
+				),
+				array(
+					'name' => 'Commune de Berchem-Sainte-Agathe',
+					'logo' => 'berchem_brussels_icon.jpg',
+					'url' => 'https://berchem.brussels/',
 				),
 			);
 			?>
