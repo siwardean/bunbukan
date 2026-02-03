@@ -65,18 +65,11 @@
 				?>
 			</nav>
 
-			<?php
-			// Polylang language switcher disabled – language choice is in the footer only.
-			/*
-			if ( function_exists( 'pll_the_languages' ) ) :
-				?>
+			<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
 				<div class="bb-lang-switcher" aria-label="<?php echo esc_attr__( 'Language switcher', 'bunbukan' ); ?>">
 					<?php pll_the_languages( array( 'show_flags' => 1, 'show_names' => 0, 'dropdown' => 0 ) ); ?>
 				</div>
-				<?php
-			endif;
-			*/
-			?>
+			<?php endif; ?>
 
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" id="nav-toggle">
 				<span class="screen-reader-text"><?php esc_html_e( 'Primary Menu', 'bunbukan' ); ?></span>

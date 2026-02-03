@@ -304,73 +304,39 @@
 		update();
 	}
 
-	// About section image slideshow with fade effect
-	function initAboutSlideshow() {
-		const slideshows = document.querySelectorAll('[data-bb-slideshow]');
-		
-		slideshows.forEach(slideshow => {
-			const images = slideshow.querySelectorAll('.bb-about__slideshow-img');
-			if (images.length < 2) return;
-			
-			let currentIndex = 0;
-			const interval = 10000; // 10 seconds between transitions
-			
-			function showNextImage() {
-				// Remove active class from current image
-				images[currentIndex].classList.remove('bb-about__slideshow-img--active');
-				
-				// Move to next image
-				currentIndex = (currentIndex + 1) % images.length;
-				
-				// Add active class to next image
-				images[currentIndex].classList.add('bb-about__slideshow-img--active');
-			}
-			
-			// Start the slideshow
-			setInterval(showNextImage, interval);
-		});
-	}
-
-	// Language dropdown (opens upward)
+	// Language dropdown in footer (opens upward)
 	function initLanguageDropdown() {
 		const dropdowns = document.querySelectorAll('[data-dropdown]');
-		
-		dropdowns.forEach(dropdown => {
+		dropdowns.forEach(function (dropdown) {
 			const toggle = dropdown.querySelector('.language-dropdown__toggle');
 			if (!toggle) return;
-			
-			toggle.addEventListener('click', function(e) {
+			toggle.addEventListener('click', function (e) {
 				e.stopPropagation();
 				const isOpen = dropdown.hasAttribute('data-open');
-				
-				// Close all dropdowns first
-				dropdowns.forEach(d => {
+				dropdowns.forEach(function (d) {
 					d.removeAttribute('data-open');
-					d.querySelector('.language-dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+					var t = d.querySelector('.language-dropdown__toggle');
+					if (t) t.setAttribute('aria-expanded', 'false');
 				});
-				
-				// Toggle current
 				if (!isOpen) {
 					dropdown.setAttribute('data-open', '');
 					toggle.setAttribute('aria-expanded', 'true');
 				}
 			});
 		});
-		
-		// Close on click outside
-		document.addEventListener('click', function() {
-			dropdowns.forEach(d => {
+		document.addEventListener('click', function () {
+			dropdowns.forEach(function (d) {
 				d.removeAttribute('data-open');
-				d.querySelector('.language-dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+				var t = d.querySelector('.language-dropdown__toggle');
+				if (t) t.setAttribute('aria-expanded', 'false');
 			});
 		});
-		
-		// Close on Escape
-		document.addEventListener('keydown', function(e) {
+		document.addEventListener('keydown', function (e) {
 			if (e.key === 'Escape') {
-				dropdowns.forEach(d => {
+				dropdowns.forEach(function (d) {
 					d.removeAttribute('data-open');
-					d.querySelector('.language-dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+					var t = d.querySelector('.language-dropdown__toggle');
+					if (t) t.setAttribute('aria-expanded', 'false');
 				});
 			}
 		});
@@ -388,7 +354,6 @@
 			initFlipCards();
 			initSectionHeaders();
 			initDisciplinesParallax();
-			initAboutSlideshow();
 			initLanguageDropdown();
 		});
 	} else {
@@ -401,7 +366,6 @@
 		initFlipCards();
 		initSectionHeaders();
 		initDisciplinesParallax();
-		initAboutSlideshow();
 		initLanguageDropdown();
 	}
 
