@@ -5,8 +5,9 @@
  * @package Bunbukan
  */
 
-// When home URL shows no content (no static front page set, or Polylang returns no page), show front page template.
-if ( is_home() && ! have_posts() ) {
+// Show custom front page for the site "home" in every language (e.g. /, /ja/, /fr/, /en/).
+// When no static front page is set for a language (e.g. Japanese), WordPress shows the blog index; we override to show front-page.php.
+if ( is_home() ) {
 	locate_template( 'front-page.php', true );
 	return;
 }
