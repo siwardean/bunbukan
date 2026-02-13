@@ -289,9 +289,7 @@ msgstr ""
 
 #: template-parts/cookie-consent.php
 msgid "We use cookies to enhance your browsing experience and remember your language preference. By clicking \"Accept\", you consent to our use of cookies."
-msgstr ""
-
-#: template-parts/cookie-consent.php
+msgstr ""#: template-parts/cookie-consent.php
 msgid "Accept cookies"
 msgstr ""
 
