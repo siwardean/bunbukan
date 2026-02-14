@@ -217,9 +217,7 @@ msgstr ""
 
 #: footer.php
 msgid "Bunbukan Brussels"
-msgstr ""
-
-#: footer.php
+msgstr ""#: footer.php
 msgid "Traditional Okinawan Martial Arts in Brussels"
 msgstr ""
 

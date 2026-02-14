@@ -318,3 +318,11 @@ function bunbukan_search_form($form)
 	return $form;
 }
 add_filter('get_search_form', 'bunbukan_search_form', 40);
+
+/**
+ * Pods & ACF: custom data and migration helpers (admin menu under Tools → Migration Pods).
+ */
+$pods_migration = get_template_directory() . '/inc/pods-migration-data.php';
+if (file_exists($pods_migration)) {
+	require_once $pods_migration;
+}
